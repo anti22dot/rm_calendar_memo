@@ -46,7 +46,7 @@ The implementation does not send any data outside the RMPP. All the scripts file
 **(REQUIRED)** Make sure you are aware how to enable the "USB Web interface" on RMPP. Consult **Reference 3**, section "How to enable USB transfer on your reMarkable" to get to know more about it <br>
 
 # ======== Configuration, usage ========
-On your Mac or Windows, unpack/extract/move the current project files (the entire folder "rm_calendar_memo") to some path. <br>
+**On your Mac or Windows, unpack/extract/move the current project files and move them into the folder with the name "rm_calendar_memo". This folder name will be needed further.** <br>
 * **Step A)** Download the prebuild Node.js binaries from here https://nodejs.org/en/download/prebuilt-binaries <br>
 **Make sure** to specify the **22.X** (at the time of writing, 22.10), **"Linux"** as platform, **"ARM64"** as CPU architecture. <br>
 **NOTE**: It's crucial to use the version of Node.js itself (**22.X**) that I've mentioend here, because there would be dependencies on it in my scripts <br>
