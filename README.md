@@ -65,6 +65,10 @@ root@<RMPP_IP_ADDRESS>'s password:
 ```
 **NOTE**: For the **"ssh"** command itself make sure the "Requirements" have section have been reviewed, where it was mentioned about it. <br>
 **NOTE**: The value of <RMPP_SSH_ROOT_PASSWORD> is visible from the "General > About" page of the RMPP itself. <br>
+Once we have access to the RMPP, let's also now execute this command to being able to write files into the system folders, as we would needed this later on:
+```
+root@<RMPP_IP_ADDRESS> mount -o remount,rw /
+```
 
 * **Step C)** At this point, it is needed to determine the so-called "ORIGINAL_DOC_HASH_ID" of the document that you want to use as "Calendar Memo" document. <br>
 This particular value is actually visible from the names of the folders and files within the **"/home/root/.local/share/remarkable/xochitl/"** on RMPP. <br>
