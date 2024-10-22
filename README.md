@@ -2,7 +2,6 @@
 General info, objectives <br>
 Requirements, limitations <br>
 Configuration, usage <br>
-• general <br>
 • optional configurations, debugging, notes <br>
 Sample output <br>
 Tested environments <br>
@@ -10,7 +9,7 @@ Project structure, file index <br>
 Source Code <br>
 References
 
-# ======== General info, objectives ========
+# ======== General info, objectives ====
 
 The "Calendar Memo" term has been borrowed from the Onyx Boox eink devices, since they have the similar kind of separate Android application, <br>
 which allows to write useful notes for the specific date within the app, and then display the notes relevant to the current date of looking.  <br> <br>
@@ -22,10 +21,11 @@ I have written the line into that document on the particular page (19), closed t
 Once I have put the device into "sleep" mode, the screen has automagically displayed the respected page of the "Todo" document, <br>
 corresponding to the current day of the month (19 October). <br> <br>
 
-See this video demonstration here https://www.youtube.com/watch?v=PP7IXztZy7I and here <br>
+See this video demonstration: <br>
 <video src='https://github.com/user-attachments/assets/e18cf4d8-a7cd-4806-9045-0e6ba24546f1' width=180/>
+If it does not load, check this instead: https://www.youtube.com/watch?v=PP7IXztZy7I and here <br>
 
-# ======== Requirements, limitations, features ========
+# ======== Requirements, limitations, features ====
 **(FEATURE/LIMITATION)** The current implementation (scripts) is essentilly modifying the "suspended.png", by dynamically replacing it. <br>
 In the script "periodically_update_suspended_png.sh" there is a line "sleep 5". It means that the frequency of those changes is 5 seconds. <br>
 What's most important that there is a loop, that runs indefinitely. This is overall "good" and "bad". "Good" because it's performant, fast updates. <br>
@@ -46,15 +46,15 @@ The implementation does not send any data outside the RMPP. All the scripts file
 **(REQUIRED)** "ssh" command available from the terminal. On MacOS it is available by default. For Windows consult **Reference 2** <br>
 **(REQUIRED)** Make sure you are aware how to enable the "USB Web interface" on RMPP. Consult **Reference 3**, section "How to enable USB transfer on your reMarkable" to get to know more about it <br>
 
-# ======== Configuration, usage ========
+# ======== Configuration, usage ====
 **On your Mac or Windows, unpack/extract/move the current project files and move them into the folder with the name "rm_calendar_memo". This folder name will be needed further.** <br>
-* **Step A)** Download the prebuild Node.js binaries from here https://nodejs.org/en/download/prebuilt-binaries <br>
+* <a name="step_a"></a> **[Step A](#step_a)** Download the prebuild Node.js binaries from here https://nodejs.org/en/download/prebuilt-binaries <br>
 **Make sure** to specify the **22.X** (at the time of writing, 22.10), **"Linux"** as platform, **"ARM64"** as CPU architecture. <br>
 **NOTE**: It's crucial to use the version of Node.js itself (**22.X**) that I've mentioend here, because there would be dependencies on it in my scripts <br>
 Hit on "Download <YOUR_CHOSEN_VERSION>" button. <br>
 Unpack that archive into the separate folder, different from the current project. For example "<PATH_TO>/node-v22.10.0-linux-arm64" folder <br>
 
-* **Step B)** Connect your RMPP device to your Mac/Windows via the USB C cable. After that you need to make sure the "USB web interface" is enabled. <br>
+* <a name="step_b"></a> **[Step B](#step_b)** Connect your RMPP device to your Mac/Windows via the USB C cable. After that you need to make sure the "USB web interface" is enabled. <br>
 After that, navigate to the "Settings" - "Storage" , and there would be section "USB web interface". <br>
 Locate the IP address of your RMPP, written after the "http://". Note it down somewhere in your notepad as "<RMPP_IP_ADDRESS>" <br>
 About "USB web interface" consult **Reference 3**. Open the terminal (let's label it "Terminal 1") on your Mac or Windows and execute these commands:
@@ -66,12 +66,13 @@ root@<RMPP_IP_ADDRESS>'s password:
 ```
 **NOTE**: For the **"ssh"** command itself make sure the "Requirements" have section have been reviewed, where it was mentioned about it. <br>
 **NOTE**: The value of <RMPP_SSH_ROOT_PASSWORD> is visible from the "General > About" page of the RMPP itself. <br>
-Once we have access to the RMPP, let's also now execute this command to being able to write files into the system folders, as we would needed this later on:
+Once we have accessed the RMPP, let's also now execute this command to being able to write files into the system folders, as we would needed this later on:
 ```
-root@<RMPP_IP_ADDRESS> mount -o remount,rw /
+umount -l /etc
+mount -o remount,rw /
 ```
 
-* **Step C)** At this point, it is needed to determine the so-called "ORIGINAL_DOC_HASH_ID" of the document that you want to use as "Calendar Memo" document. <br>
+* <a name="step_c"></a> **[Step C](#step_c)** At this point, it is needed to determine the so-called "ORIGINAL_DOC_HASH_ID" of the document that you want to use as "Calendar Memo" document. <br>
 This particular value is actually visible from the names of the folders and files within the **"/home/root/.local/share/remarkable/xochitl/"** on RMPP. <br>
 This my custom named value is actually the randomly generated UUID, consult **Reference 5**, and assigned by the RMPP to the files and folders of the same document <br>
 So, for example, on my RMPP , under that mentioned path, I have these files, which are related to the UUID "131b75e8-6649-4f70-b289-63887090559e": <br>
@@ -114,14 +115,14 @@ cat 131b75e8-6649-4f70-b289-63887090559e.metadata
 # In my case above the hash name was the full value "131b75e8-6649-4f70-b289-63887090559e" Let's refer to it as "ORIGINAL_DOC_HASH_ID"
 ```
 
-* **Step D)** Once we know our **"ORIGINAL_DOC_HASH_ID"** value, identified in the previous step, we can now backup those all files, just in case:
+* <a name="step_d"></a> **[Step D](#step_d)** Once we know our **"ORIGINAL_DOC_HASH_ID"** value, identified in the previous step, we can now backup those all files, just in case:
 ```
 cd /home/root/
 mkdir document_files_backup
 cp -R /home/root/.local/share/remarkable/xochitl/131b75e8-6649-4f70-b289-63887090559e.* /home/root/document_files_backup/
 ```
 
-* **Step E)** Once we know our **"ORIGINAL_DOC_HASH_ID"** value, identified in the previous step, we can now modify our respected ".png" files of our document. <br>
+* <a name="step_e"></a> **[Step E](#step_e)** Once we know our **"ORIGINAL_DOC_HASH_ID"** value, identified in the previous step, we can now modify our respected ".png" files of our document. <br>
 Before that, let's make sure that documents are closed on the RMPP itself, meaning, we are not doing anything on the device itself, like writing, etc. <br>
 From the already opened "Terminal 1" , please copy the entire content of the "<ORIGINAL_DOC_HASH_ID>.content" file:
 ```
@@ -200,7 +201,7 @@ It's also needed to change the name of the file **"<PATH_TO><ORIGINAL_DOC_HASH_I
 to the **"<PATH_TO><ORIGINAL_DOC_HASH_ID>.thumbnails/2.png**. <br>
 The same thing has to be performed for all the pages mentioned under the "pages" block of the **"<ORIGINAL_DOC_HASH_ID>.content"** file. <br>
 
-* **Step F)** Once the previous step has been completed, you should have the structure of the files and folders similar to this , <br>
+* <a name="step_f"></a> **[Step F](#step_f)** Once the previous step has been completed, you should have the structure of the files and folders similar to this , <br>
 for your particular chosen <ORIGINAL_DOC_HASH_ID> (in this my example, <ORIGINAL_DOC_HASH_ID>=131b75e8-6649-4f70-b289-63887090559e):
 ```
 root@<MY_RMPP_HOSTNAME>:~/.local/share/remarkable/xochitl# ls -ltra |grep 131b75e8-6649-4f70-b289-63887090559e
@@ -292,7 +293,7 @@ root@<MY_RMPP_HOSTNAME>:~/.local/share/remarkable/xochitl# cat 131b75e8-6649-4f7
 # However, from that file we only need to look into the variables "id" under the "pages" block, and to do it in the order from top to the bottom.
 ```
 
-* **Step G)** Previous steps have confirmed that you have the SSH connection from your MacOS or Windows to your RMPP device. <br>
+* <a name="step_g"></a> **[Step G](#step_g)** Previous steps have confirmed that you have the SSH connection from your MacOS or Windows to your RMPP device. <br>
 The next step would be to transfer the files using the SCP rather than Web UI, because we need to transfer them into the specific location. <br>
 At this point, depending on the OS type, there can be used many tools to transfer the files using SFTP, consult **Reference 4**. <br>
 In this manual I would be using tool called "scp" , and would be using MacOS platform. Open another "Terminal 2", and navigate to folder with Node.js. <br>
@@ -319,7 +320,7 @@ root@<RMPP_IP_ADDRESS>'s password:
 ```
 **NOTE**: The value of <RMPP_SSH_ROOT_PASSWORD> is visible from the "General > About" page of the RMPP itself. <br>
 
-**Step H)** Once we have completed uploading the "Node.js" into the RMPP, we can verify whether it has been uploaded correctly, from the "Terminal 1" <br>
+<a name="step_h"></a> **[Step H](#step_h)** Once we have completed uploading the "Node.js" into the RMPP, we can verify whether it has been uploaded correctly, from the "Terminal 1" <br>
 ```
 root@<MY_RMPP_HOSTNAME>:~# cd ~
 root@<MY_RMPP_HOSTNAME>:~# ls -ltra | grep node
@@ -377,7 +378,7 @@ root@<RMPP_IP_ADDRESS>'s password:
 <RMPP_SSH_ROOT_PASSWORD>
 ```
 
-* **Step I)** FROM RMPP Terminal | Once the previous step has been executed, verify that the files have been copied correctly into the RMPP:
+* <a name="step_i"></a> **[Step I](#step_i)** FROM RMPP Terminal | Once the previous step has been executed, verify that the files have been copied correctly into the RMPP:
 ```
 root@<MY_RMPP_HOSTNAME>:~# ls -ltra
 drwxr-xr-x    4 root     root          4096 Oct 19 13:52 ..
@@ -409,7 +410,8 @@ drwxr-xr-x    3 root     root          4096 Oct 20 18:33 .
 ```
 It's needed to give the right permissions to the application files:
 ```
-root@<MY_RMPP_HOSTNAME>:~# chmod 755 rm_calendar_memo/*
+chmod 755 /home/root/rm_calendar_memo/*
+chmod 644 /home/root/rm_calendar_memo/rm_calendar_memo.service
 ```
 Now, it's needed to copy the "rm_calendar_memo.service" into the SystemD directory of the RMPP, like so:
 ```
@@ -419,7 +421,7 @@ Then, run these commands to check whether the service has been "recognized" by t
 ```
 root@<MY_RMPP_HOSTNAME>:~# systemctl status rm_calendar_memo.service
 ○ rm_calendar_memo.service - periodically update the remarkable paper pro suspended picture
-     Loaded: loaded (/usr/lib/systemd/system/rm_calendar_memo.service; enabled; vendor preset: disabled)
+     Loaded: loaded (/usr/lib/systemd/system/rm_calendar_memo.service; disabled; vendor preset: disabled)
      Active: inactive (dead) since Sun 2024-10-20 18:15:42 UTC; 25min ago
 Warning: The unit file, source configuration file or drop-ins of rm_calendar_memo.service changed on disk. Run 'systemctl daemon-reload' to reload units.
 ```
@@ -448,7 +450,7 @@ To make sure the scripts would run after the reboot, execute this command:
 root@<MY_RMPP_HOSTNAME>:~# systemctl enable rm_calendar_memo.service
 ```
 
-## ======== Optional, Debugging, Extras ========
+## ======== Optional, Debugging, Extras ====
 **(OPTIONAL/DEBUGGING)** The frequency of the dynamic changes of the file "suspended.png" is set to "5 seconds", by default, but can be modified. <br>
 To modify it open the file "periodically_update_suspended_png.sh" and change the value of the "sleep 5" command to your value of choice. <br>
 **(OPTIONAL/DEBUGGING)** If you look into the ".env" file it has variable "RM_CALENDAR_APP_DEBUG". This variable used for troubleshooting purposes <br>
@@ -496,12 +498,13 @@ rm -f /home/root/rm_calendar_memo/20.png.new /home/root/rm_calendar_memo/20.png
 ========
 ```
 
-# ======== Tested environments ========
+# ======== Tested environments ====
 ```
 * Tested combination 1 | Device: Remarkable Paper Pro, firmware: 3.15.2.1 | node22.10.0_lin_arm64, sharp0.33.5
+* Tested combination 2 | Device: Remarkable Paper Pro, firmware: 3.15.3.0 | node22.10.0_lin_arm64, sharp0.33.5
 ```
 
-# ======== Project structure, file index ========
+# ======== Project structure, file index ====
 ```
 [bash Downloads]$ tree -L 1 -h rm_calendar_memo/
 [ 384]  rm_calendar_memo/
@@ -516,7 +519,7 @@ rm -f /home/root/rm_calendar_memo/20.png.new /home/root/rm_calendar_memo/20.png
 └── [ 407]  rm_calendar_memo.service
 ```
 
-# ======== Source Code | periodically_update_suspended_png.sh ========
+# ======== Source Code | periodically_update_suspended_png.sh ====
 <div style=background:#f2edd7;color:#755139>
 
 ```
@@ -558,7 +561,7 @@ while true; do
     rm -f ${TODAYS_TODO_TMP_ABSOLUTE_FILENAME} ${CALENDAR_MEMO_ROOT}/${DOM}.png
     logline "========"
 
-  else echo "* The file ${TODAYS_TODO_OLD_ABSOLUTE_FILENAME} does NOT exist."
+  else logline "* The file ${TODAYS_TODO_OLD_ABSOLUTE_FILENAME} does NOT exist."
   fi
 
 done
