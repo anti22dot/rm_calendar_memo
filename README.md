@@ -318,7 +318,7 @@ root@<RMPP_IP_ADDRESS>'s password:
 ```
 **NOTE**: The value of <RMPP_SSH_ROOT_PASSWORD> is visible from the "General > About" page of the RMPP itself. <br>
 
-<a name="step_h"></a> **[Step H](#step_h)** Once we have completed uploading the "Node.js" into the RMPP, we can verify whether it has been uploaded correctly, from the "Terminal 1" <br>
+* <a name="step_h"></a> **[Step H](#step_h)** Once we have completed uploading the "Node.js" into the RMPP, we can verify whether it has been uploaded correctly, from the "Terminal 1" <br>
 ```
 root@<MY_RMPP_HOSTNAME>:~# cd ~
 root@<MY_RMPP_HOSTNAME>:~# ls -ltra | grep node
