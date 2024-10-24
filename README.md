@@ -445,7 +445,7 @@ Oct 20 18:45:09 <MY_RMPP_HOSTNAME> systemd[1]: Started periodically update the r
 ```
 To make sure the scripts would run after the reboot, execute this command:
 ```
-root@<MY_RMPP_HOSTNAME>:~# systemctl enable rm_calendar_memo.service
+systemctl enable rm_calendar_memo.service
 ```
 
 ## ======== Optional, Debugging, Extras ====
