@@ -425,7 +425,7 @@ Warning: The unit file, source configuration file or drop-ins of rm_calendar_mem
 ```
 Then run this command to reload the SystemD daemon:
 ```
-root@<MY_RMPP_HOSTNAME>:~# systemctl daemon-reload
+systemctl daemon-reload
 ```
 Then start the service, and check the status of it:
 ```
