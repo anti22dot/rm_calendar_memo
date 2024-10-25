@@ -561,7 +561,6 @@ while true; do
 
   else logline "* The file ${TODAYS_TODO_OLD_ABSOLUTE_FILENAME} does NOT exist."
   fi
-
 done
 ```
 </div>
