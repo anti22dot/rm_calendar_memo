@@ -534,8 +534,7 @@ while true; do
   DOM=$(date +%d)
   TODAYS_TODO_OLD_ABSOLUTE_FILENAME=/home/root/.local/share/remarkable/xochitl/${ORIGINAL_DOC_HASH_ID}.thumbnails/${DOM}.png
   TODAYS_TODO_TMP_ABSOLUTE_FILENAME=${CALENDAR_MEMO_ROOT}/${DOM}.png.new
-
-  sleep 5
+  sleep 0.5
   logline ""; logline "========";
   logline "Right now is $(date). Searching for the ${DOM}.png file"
   if [ -f ${TODAYS_TODO_OLD_ABSOLUTE_FILENAME} ] ; then
