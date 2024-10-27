@@ -182,8 +182,7 @@ cd 131b75e8-6649-4f70-b289-63887090559e.thumbnails; ls -ltra
 ```
 It is needed to look into the notepad with the content of the "<ORIGINAL_DOC_HASH_ID>.content", and go "one-by-one" from the top to bottom <br>
 At the same time, it's needed to rename the corresponding "<PATH_TO><ORIGINAL_DOC_HASH_ID>.thumbnails/*.png" files, <br>
-one-by-one in the order specified in the "<ORIGINAL_DOC_HASH_ID>.content" file. <br>
-For example, see above output, there is this line:
+one-by-one in the order specified in the "<ORIGINAL_DOC_HASH_ID>.content" file. For example, see above output, there is this line:
 ```
 "id": "68bc7cd1-5362-4550-893a-8deb9f877a8a",
 ```
