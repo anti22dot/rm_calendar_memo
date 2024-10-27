@@ -311,7 +311,7 @@ scp -r ./node-v22.10.0-linux-arm64 root@<RMPP_IP_ADDRESS>:/home/root/
 root@<RMPP_IP_ADDRESS>'s password:
 # It would prompt you for the password, so, enter it and then hit "enter":
 <RMPP_SSH_ROOT_PASSWORD>
-# After that, it would upload the entire folder (in my case "node-v22.10.0-linux-arm64") into RMPP under "/home/root"
+# After that, upload the entire folder (in my case "node-v22.10.0-linux-arm64") into RMPP under "/home/root"
 ```
 **NOTE**: The value of <RMPP_SSH_ROOT_PASSWORD> is visible from the "General > About" page of the RMPP itself. <br>
 
