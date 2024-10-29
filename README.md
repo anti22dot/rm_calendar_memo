@@ -194,7 +194,7 @@ Then, for example, the next item in the "pages" block was having the value of "i
 Hence, it's needed to change this value to "2" in the **"<ORIGINAL_DOC_HASH_ID>.content"** file. <br>
 It's also needed to change the name of the file **"<PATH_TO><ORIGINAL_DOC_HASH_ID>.thumbnails/2c02dd9d-28c0-4c58-8a93-3272f3967be5.png"** <br>
 to the **"<PATH_TO><ORIGINAL_DOC_HASH_ID>.thumbnails/2.png**. <br>
-The same thing has to be performed for all the pages mentioned under the "pages" block of the **"<ORIGINAL_DOC_HASH_ID>.content"** file. <br>
+The same thing has to be performed for all the pages mentioned under the "pages" block of the **"<ORIGINAL_DOC_HASH_ID>.content"** file.
 
 * <a name="step_f"></a> **[Step F](#step_f)** Once the previous step has been completed, you should have the structure of the files and folders similar to this , <br>
 for your particular chosen <ORIGINAL_DOC_HASH_ID> (in this my example, <ORIGINAL_DOC_HASH_ID>=131b75e8-6649-4f70-b289-63887090559e):
