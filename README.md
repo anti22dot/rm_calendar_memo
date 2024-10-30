@@ -365,7 +365,7 @@ drwx------@ 10 staff   320B Oct 20 20:19 ..
 drwxr-xr-x  15 staff   480B Oct 20 20:31 node_modules
 drwxr-xr-x@ 12 staff   384B Oct 20 20:31 .
 ```
-FROM MAC/WIN | It's now needed to transfer the project folder **"rm_calendar_memo"** into the rm, under the **"/home/root"**. In my use case I use "scp" :
+FROM MAC/WIN | It's now needed to transfer the project folder **"rm_calendar_memo"** into the rm, under the **"/home/root"**. In my use case I have used "scp" :
 ```
 [bash Downloads]$ scp -r ./rm_calendar_memo root@<RMPP_IP_ADDRESS>:/home/root/
 root@<RMPP_IP_ADDRESS>'s password:
