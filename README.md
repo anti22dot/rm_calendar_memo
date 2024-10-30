@@ -48,7 +48,7 @@ The implementation does not send any data outside the RMPP. All the scripts file
 **Make sure** to specify the **22.X** (at the time of writing, 22.10), **"Linux"** as platform, **"ARM64"** as CPU architecture. <br>
 **NOTE**: It's crucial to use the version of Node.js itself (**22.X**) that I've mentioend here, because there would be dependencies on it in my scripts <br>
 Hit on "Download <YOUR_CHOSEN_VERSION>" button. <br>
-Unpack that archive into the separate folder, different from the current project. For example "<PATH_TO>/node-v22.10.0-linux-arm64" folder <br>
+Unpack that archive into the separate folder, different from the current project. For example, "<PATH_TO>/node-v22.10.0-linux-arm64" folder <br>
 
 * <a name="step_b"></a> **[Step B](#step_b)** Connect your RMPP device to your Mac/Windows via the USB C cable. After that you need to make sure the "USB web interface" is enabled. <br>
 After that, navigate to the "Settings" - "Storage" , and there would be section "USB web interface". <br>
