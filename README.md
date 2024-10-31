@@ -562,7 +562,7 @@ done
 </div>
 
 # ======== References ========
-• [Reference 1](https://support.remarkable.com/s/article/Developer-mode) <br>
+• [Reference 1 | Remarkable Paper Pro. Enable Developer Mode.](https://support.remarkable.com/s/article/Developer-mode) <br>
 • [Reference 2](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) <br>
 • [Reference 3](https://support.remarkable.com/s/article/importing-and-exporting-files) <br>
 • [Reference 4](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) <br>
