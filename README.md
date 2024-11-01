@@ -565,5 +565,5 @@ done
 • [Reference 1 | Remarkable. Enable Developer Mode.](https://support.remarkable.com/s/article/Developer-mode) <br>
 • [Reference 2 | Microsoft. OpenSSH installation, first use.](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) <br>
 • [Reference 3 | Remarkable. Importing and exporting files.](https://support.remarkable.com/s/article/importing-and-exporting-files) <br>
-• [Reference 4](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) <br>
+• [Reference 4 | Wikipedia. SSH File Transfer Protocol.](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) <br>
 • [Reference 5](https://en.wikipedia.org/wiki/Universally_unique_identifier) <br>
