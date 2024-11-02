@@ -510,7 +510,7 @@ rm -f /home/root/rm_calendar_memo/20.png.new /home/root/rm_calendar_memo/20.png
 ├── [ 17K]  package-lock.json
 ├── [  51]  package.json
 ├── [2.4K]  periodically_update_suspended_png.sh
-├── [   0]  rm_calendar_memo.log
+├── [0]  rm_calendar_memo.log
 └── [ 407]  rm_calendar_memo.service
 ```
 
