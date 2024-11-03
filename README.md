@@ -487,7 +487,9 @@ node png_open_resize.js 20.png
   hasAlpha: false
 }
 * Copying the new resized file into the target location, while replacing the current 'suspended.png' file:
+```
 cp /home/root/rm_calendar_memo/20.png.new /usr/share/remarkable/suspended.png
+```
 * Deleting the temporary copy of the original file, as well as resized file
 rm -f /home/root/rm_calendar_memo/20.png.new /home/root/rm_calendar_memo/20.png
 ========
