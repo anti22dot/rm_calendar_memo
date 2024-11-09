@@ -3,7 +3,6 @@ General info, objectives <br>
 Requirements, limitations <br>
 Configuration, usage <br>
 • optional configurations, debugging, notes <br>
-Sample output <br>
 Tested environments <br>
 Project structure, file index <br>
 Source Code <br>
