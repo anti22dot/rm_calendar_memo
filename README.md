@@ -104,7 +104,7 @@ cat 131b75e8-6649-4f70-b289-63887090559e.metadata
     "visibleName": "Todo"
 }
 # From that file we only need to look into one variable's value, "visibleName". Using that variable value we can quickly locate our chosen document.
-# For example, above you can see it says "Todo". That's exactly the name of my document, that I have chosen for this task "Calendar Memo"
+# For example, above you can see it says "Todo". That's exactly the name of my document, that I have chosen for this task "Calendar Memo".
 # Once we have found the "*.metadata" file that is corresponding to our chosen document, we need to note down the hash name of that file
 # In my case above the hash name was the full value "131b75e8-6649-4f70-b289-63887090559e" Let's refer to it as "ORIGINAL_DOC_HASH_ID"
 ```
