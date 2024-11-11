@@ -77,7 +77,7 @@ drwxr-xr-x    2 root     root          4096 Oct 20 16:26 131b75e8-6649-4f70-b289
 -rw-r--r--    1 root     root           230 Oct 20 16:26 131b75e8-6649-4f70-b289-63887090559e.metadata
 -rw-r--r--    1 root     root         13691 Oct 20 16:26 131b75e8-6649-4f70-b289-63887090559e.content
 ```
-So, at this point, it's needed to locate the particular document, that you want to use as you calendar document, which would be used for this purpose <br>
+So, at this point, it's needed to locate the particular document, that you want to use as you calendar document, which would be used for this purpose. <br>
 For that, I would recommend to create some document on RMPP , could be PDF or Notebook, and have at least 30 pages there. <br>
 Once determined, just open that document, press on the little "notebook" menu at the bottom of the screen, then press "Notebook settings". <br>
 There you'd see "ID: <SOME_VALUE>". For example, in my document use case, those value equals to **"131b75e8"**
