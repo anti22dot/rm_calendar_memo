@@ -68,7 +68,7 @@ mount -o remount,rw /
 
 * <a name="step_c"></a> **[Step C](#step_c)** At this point, it is needed to determine the so-called "ORIGINAL_DOC_HASH_ID" of the document that you want to use as "Calendar Memo" document. <br>
 This particular value is actually visible from the names of the folders and files within the **"/home/root/.local/share/remarkable/xochitl/"** on RMPP. <br>
-This my custom named value is actually the randomly generated UUID, consult **Reference 5**, and assigned by the RMPP to the files and folders of the same document <br>
+This my custom named value is actually the randomly generated UUID, consult **Reference 5**, and assigned by the RMPP to the files and folders of the same document. <br>
 So, for example, on my RMPP , under that mentioned path, I have these files, which are related to the UUID "131b75e8-6649-4f70-b289-63887090559e": <br>
 ```
 root@<MY_RMPP_HOSTNAME>:~# ls -ltra /home/root/.local/share/remarkable/xochitl/
