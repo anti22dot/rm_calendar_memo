@@ -17,8 +17,7 @@ which allows to write useful notes for the specific date within the app, and the
 * The similar concept has been taken when designing the functionality of this implementation on the RMPP.
 * In my example, there has been opened the notepad, labeled as "Todo", containing 30 total pages (kinda days of month).
 * I have written the line into that document on the particular page (19), closed that document and opened different document.
-* Once I have put the device into "sleep" mode, the screen has automagically displayed the respected page of the "Todo" document,
-corresponding to the current day of the month (19 October).
+* Once I have put the device into "sleep" mode, the screen has automagically displayed the respected page of the "Todo" document, corresponding to the current day of the month (19 October).
 
 # ======== Requirements, limitations, features ====
 **(FEATURE/LIMITATION)** The current implementation (scripts) is essentilly modifying the "suspended.png", by dynamically replacing it. <br>
