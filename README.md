@@ -13,7 +13,7 @@ References <br>
 * See this video demonstration: <video src='https://github.com/user-attachments/assets/e18cf4d8-a7cd-4806-9045-0e6ba24546f1' width=180/>
 * If the video does not load, check this instead: https://www.youtube.com/watch?v=PP7IXztZy7I
 * The "Calendar Memo" term has been borrowed from the Onyx Boox eink devices, since they have the similar kind of separate Android application, <br>
-which allows to write useful notes for the specific date within the app, and then display the notes relevant to the current date of looking.
+which allows to write useful notes for the specific date within the app, and then display the notes relevant to the current date of looking
 * The similar concept has been taken when designing the functionality of this implementation on the RMPP.
 * In my example, there has been opened the notepad, labeled as "Todo", containing 30 total pages (kinda days of month)
 * I have written the line into that document on the particular page (19), closed that document and opened different document
