@@ -542,7 +542,7 @@ while true; do
     cd ${CALENDAR_MEMO_ROOT};
     logline "* The file ${TODAYS_TODO_OLD_ABSOLUTE_FILENAME} exist."
     logline "* Creating the temporary copy of this file in the /home/root/rm_calendar_memo/ location: "
-    logline "cp ${TODAYS_TODO_OLD_ABSOLUTE_FILENAME} ${CALENDAR_MEMO_ROOT}/;"
+    logline "cp ${TODAYS_TODO_OLD_ABSOLUTE_FILENAME} ${CALENDAR_MEMO_ROOT}/"
     cp ${TODAYS_TODO_OLD_ABSOLUTE_FILENAME} ${CALENDAR_MEMO_ROOT}/;
     logline "* Here is the metadata of that newly copied file: "
     [[ "$RM_CALENDAR_APP_DEBUG" != true ]] && node get_metadata.js ${DOM}.png &>> /dev/null || node get_metadata.js ${DOM}.png
