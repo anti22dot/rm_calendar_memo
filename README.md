@@ -5,7 +5,6 @@ Configuration, usage <br>
 • optional configurations, debugging, notes <br>
 Tested environments <br>
 Project structure, file index <br>
-Source Code <br>
 References <br>
 
 # ======== General info, objectives ====
