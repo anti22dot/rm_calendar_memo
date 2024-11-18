@@ -19,7 +19,7 @@ which allows to write useful notes for the specific date within the app, and the
 * Once I have put the device into "sleep" mode, the screen has automagically displayed the respected page of the "Todo" document, corresponding to the current day of the month (19 October)
 
 # ======== Requirements, limitations, features ====
-**(FEATURE/LIMITATION)** The current implementation (scripts) is essentilly modifying the "suspended.png", by dynamically replacing it. <br>
+**(FEATURE/LIMITATION)** The current implementation (scripts) is modifying the "suspended.png", by dynamically replacing it. <br>
 In the script "periodically_update_suspended_png.sh" there is a line "sleep 5". It means that the frequency of those changes is 5 seconds. <br>
 What's most important that there is a loop, that runs indefinitely. This is overall "good" and "bad". "Good" because it's performant, fast updates. <br>
 "Bad" because it is not very efficient to keep on replacing the file all the time, even when we don't actually adding some notes to respected PNG. <br>
