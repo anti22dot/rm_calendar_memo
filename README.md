@@ -156,7 +156,7 @@ ORIGINAL_DOC_HASH_ID=430f8cdf-e2e8-412c-b7e3-5ebf3b126bff
 ...
 ```
 **NOTE**: Do not modify the other variables. You only need to modify one variable here, **NODE_ROOT=**, path to "root" of the Node.js dir on RMPP. <br>
-**NOTE**: For example, in my use case: **NODE_ROOT=/home/root/node-v22.11.0-linux-arm64** <br>
+**NOTE**: For example, in my use case: **NODE_ROOT=/home/root/node-v22.11.0-linux-arm64**. <br>
 Verify the project files, they should look similar to below:
 ```
 [bash Downloads]$ ls -ltra |grep rm_calendar
