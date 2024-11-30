@@ -22,7 +22,7 @@ which allows to write useful notes for the specific date within the app, and the
 In the script "periodically_update_suspended_png.sh" there is a line "sleep 5". It means that the frequency of those changes is 5 seconds. <br>
 What's most important that there is a loop, that runs indefinitely. This is overall "good" and "bad". "Good" because it's performant, fast updates. <br>
 "Bad" because it is not very efficient to keep on replacing the file all the time, even when we don't actually adding some notes to respected PNG. <br>
-**(FEATURE)** I have been reviewing the CPU and RAM consumption of the implementation-specific files, during the execution, using "top" tool, on RMPP. <br>
+**(FEATURE/LIMITATIONS)** I have been reviewing the CPU and RAM consumption of the implementation-specific files, during the execution, using "top" tool, on RMPP. <br>
 The CPU and RAM (%VSZ) consumptions were showing "0%"/"0%" almost all the time, for the respected scripts used, like so:
 ```
   PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND
