@@ -138,7 +138,7 @@ Also we need to give the executable bits to the "node" binary. Execute this comm
 ```
 root@<MY_RMPP_HOSTNAME>:~# chmod +x node node-v22.11.0-linux-arm64/bin/*
 ```
-Next, on your MacOS or Windows, open the file ".env" inside the folder with the unpacked project files.
+Next, on your MacOS or Windows, open file ".env" inside the folder with the unpacked project files.
 Provide the appropriate values to the following parameters, after the "=" sign, accordingly:
 ```
 RM_CALENDAR_APP_DEBUG=false
