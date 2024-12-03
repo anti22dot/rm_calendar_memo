@@ -35,7 +35,7 @@ The implementation does not send any data outside the RMPP. All the scripts file
 **(LIMITATIONS)** For the **"supported RM+versions"** refer to the "Tested environments" section of the current memo. <br>
 **(REQUIRED/LIMITATION)** This implementation works only in "Dev mode" Make sure the "Developer mode" is enabled. Consult the **Reference 1** about it. <br>
 **(REQUIRED)** Know your "<RMPP_SSH_ROOT_PASSWORD>" password for SSH. Consult the **Reference 1**, section "Accessing your reMarkable Paper Pro via SSH". <br>
-**(REQUIRED)** "ssh" command available from the terminal. On MacOS it is available by default. For Windows consult **Reference 2** <br>
+**(REQUIRED)** "ssh" command available from the terminal. On MacOS it is available by default. For Windows consult **Reference 2**. <br>
 **(REQUIRED)** Make sure you are aware how to enable the "USB Web interface" on RMPP. Consult **Reference 3**, section "How to enable USB transfer on your reMarkable" to get to know more about it. <br>
 
 # ======== Configuration, usage | Use case 1 | Integrate the **rm_calendar** with the rm_calendar_memo ====
