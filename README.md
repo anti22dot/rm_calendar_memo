@@ -179,7 +179,7 @@ drwxr-xr-x  17 staff   544B Nov 23 15:34 .
 drwxr-xr-x@  9 staff   288B Nov 23 15:40 rm_calendar
 -rw-r--r--@  1 staff    33K Nov 23 17:07 README.md
 ```
-From MAC/WIN | It's now needed to transfer the entire dir **"rm_calendar_memo"** into the RMPP, under the **"/home/root/"**. In my use case I used "scp" :
+From MAC/WIN | It's now needed to transfer the entire dir **"rm_calendar_memo"** into the RMPP, under the **"/home/root/"**. In my use case I used "scp":
 ```
 [bash Downloads]$ scp -r ./rm_calendar_memo root@<RMPP_IP_ADDRESS>:/home/root/
 root@<RMPP_IP_ADDRESS>'s password:
