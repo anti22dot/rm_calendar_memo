@@ -298,7 +298,7 @@ After changing that environment variable value, it's needed to restart the Syste
 So, it's useful for debugging purposes. Here is the sample output of the `rm_calendar_memo.log` when debug is enabled:
 ```
 ========
-Right now is Sat Nov 23 16:28:54 UTC 2024. Searching for the /home/root/.local/share/remarkable/xochitl/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.thumbnails/e4013870-9f47-4dd8-a4aa-b33b4e726108.png file
+Right now is Sat Nov 23 16:28:54 UTC 2024. Searching for the /home/root/.local/share/remarkable/xochitl/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.thumbnails/e4013870-9f47-4dd8-a4aa-b33b4e726108.png file.
 * The file /home/root/.local/share/remarkable/xochitl/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.thumbnails/e4013870-9f47-4dd8-a4aa-b33b4e726108.png exist.
 * Creating the temporary copy of this file in the /home/root/rm_calendar_memo/ location:
 cp /home/root/.local/share/remarkable/xochitl/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.thumbnails/e4013870-9f47-4dd8-a4aa-b33b4e726108.png /home/root/rm_calendar_memo/23.11.24.png
