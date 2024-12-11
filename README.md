@@ -106,7 +106,7 @@ scp -r ./node-v22.11.0-linux-arm64 root@<RMPP_IP_ADDRESS>:/home/root/
 root@<RMPP_IP_ADDRESS>'s password:
 # It would prompt you for the password, so, enter it and then hit "enter":
 <RMPP_SSH_ROOT_PASSWORD>
-# After that, the entire folder (in my case "node-v22.11.0-linux-arm64") would be uploaded into RMPP under "/home/root/".
+# After that, the entire folder (in my case "node-v22.11.0-linux-arm64") would be uploaded into RMPP under `/home/root/`.
 # It would take some time to do that, and it would display many lines, similar to the below output:
 ...
 no-tty.js                                         100%   44    44.3KB/s   00:00
