@@ -75,7 +75,7 @@ root@<RMPP_IP_ADDRESS>'s password:
 root@<MY_RMPP_HOSTNAME>:~#
 ```
 **NOTE**: For the **"ssh"** command itself make sure the "Requirements" have section have been reviewed, where it was mentioned about it. <br>
-**NOTE**: The value of `<RMPP_SSH_ROOT_PASSWORD>` is visible from the "General > About > Copyrights and licenses" page of the RMPP itself. <br>
+**NOTE**: The value of `<RMPP_SSH_ROOT_PASSWORD>` is visible from the `General > About > Copyrights and licenses` page of the RMPP itself. <br>
 Once we have accessed the RMPP, let's also now execute this command to being able to write files into the system folders, as we would needed this later on:
 ```
 umount -l /etc
@@ -86,7 +86,7 @@ mount -o remount,rw /
 Previous steps have confirmed that you have the SSH connection from your MacOS or Windows to your RMPP device. <br>
 In the further steps we would transfer the files using the SCP rather than Web UI, because we need to transfer them into the specific location. <br>
 At this point, depending on the OS type, there can be used many tools to transfer the files using SFTP, consult **Reference 4**. <br>
-In this manual I would be using tool called "scp", and would be using MacOS platform. Open another **"Terminal 2"**, navigate to folder with Node.js. <br>
+In this manual I would be using tool called `scp`, and would be using MacOS platform. Open another **"Terminal 2"**, navigate to folder with Node.js. <br>
 From inside that folder let's execute this command:
 ```
 [bash Downloads]$ pwd
