@@ -44,7 +44,7 @@ See file of the systemd service, where the path matters: https://github.com/anti
 * <a name="use_case1_step_a"></a> **[Use case 1 | Step A](#use_case1_step_a)** Download the prebuild Node.js binaries from here https://nodejs.org/en/download/prebuilt-binaries <br>
 **Make sure** to specify the **22.X** (at the time of this memo, 22.11), **"Linux"** as platform, **"ARM64"** as CPU architecture. <br>
 **NOTE**: It's crucial to use the version of Node.js itself (**22.X**), that I've mentioend here, because there would be dependencies on it in scripts. <br>
-Hit on "Download `<YOUR_CHOSEN_VERSION>` button. Unpack that archive into the separate folder, **different from the current project**. <br>
+Hit on "Download `<YOUR_CHOSEN_VERSION>` button. Unpack that archive into the separate folder which is **different from the current project**. <br>
 For example, `<PATH_TO>/node-v22.11.0-linux-arm64` folder:
 ```
 [bash Downloads]$ ls -ltra |grep node
