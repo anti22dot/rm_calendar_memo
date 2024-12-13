@@ -68,7 +68,7 @@ About "USB web interface" consult **Reference 3**. Open the terminal (let's labe
 ```
 ssh root@<RMPP_IP_ADDRESS>
 root@<RMPP_IP_ADDRESS>'s password:
-# It would prompt you for the password, enter it and then hit "enter":
+# It would prompt you for the password, provide it and then hit "enter":
 <RMPP_SSH_ROOT_PASSWORD>
 # If the password is correct, it would show to you the prompt of the RMPP:
 root@<MY_RMPP_HOSTNAME>:~#
