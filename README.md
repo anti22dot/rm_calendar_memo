@@ -70,7 +70,7 @@ ssh root@<RMPP_IP_ADDRESS>
 root@<RMPP_IP_ADDRESS>'s password:
 # It would prompt you for the password, provide it and hit "enter":
 <RMPP_SSH_ROOT_PASSWORD>
-# If the password is correct, it would show to you the prompt of the RMPP:
+# If the password is correct, it would show to you the prompt of the RMPP, like this:
 root@<MY_RMPP_HOSTNAME>:~#
 ```
 **NOTE**: For the **"ssh"** command itself make sure the "Requirements" have section have been reviewed, where it was mentioned about it. <br>
