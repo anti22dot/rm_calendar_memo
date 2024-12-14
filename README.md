@@ -20,7 +20,7 @@ which allows to write useful notes for the specific date within the app, and the
 **(LIMITATION)** If you decide to and update the file `rm_calendar/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.pdf` , it's needed to reupload only that file to RMPP. <br>
 **(FEATURE/LIMITATION)** The current implementation scripts are modifying the `suspended.png`, by dynamically replacing it. <br>
 In the script `periodically_update_suspended_png.sh` there is a line `sleep 5`. It means that the frequency of those changes is 0.5 seconds. <br>
-What's most important that there is a loop, that runs indefinitely. This is overall `good` and "bad". `Good` because it's performant, fast updates. <br>
+What's most important that there is a loop, that runs indefinitely. This is overall `good` and `bad`. `Good` because it's performant, fast updates. <br>
 "Bad" because it is not very efficient to keep on replacing the file all the time, even when we don't actually adding some notes to respected PNG. <br>
 **(FEATURE/LIMITATIONS)** I have been reviewing the CPU and RAM consumption of the implementation-specific files, during the execution, using "top" tool, on RMPP. <br>
 The CPU and RAM (%VSZ) consumptions were showing "0%"/"0%" almost all the time, for the respected scripts used, like so:
