@@ -144,7 +144,7 @@ RM_CALENDAR_APP_DEBUG=false
 CALENDAR_MEMO_ROOT=/home/root/rm_calendar_memo
 TODAYS_TODO_NEW_ABSOLUTE_FILENAME=/usr/share/remarkable/suspended.png
 NODE_ROOT=
-# For the "ORIGINAL_DOC_HASH_ID" after the "=" equal sign there should be valid rm directory-specific HASH ID
+# For the "ORIGINAL_DOC_HASH_ID" after the "=" equal sign there should be valid rm directory-specific HASH ID.
 # see "README.md". EXAMPLE: 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff
 ORIGINAL_DOC_HASH_ID=430f8cdf-e2e8-412c-b7e3-5ebf3b126bff
 # After the "=" there should be valid rm page-specific HASH ID, see "README.md".
