@@ -89,7 +89,7 @@ In this manual I would be using tool called `scp`, and would be using MacOS plat
 From inside that folder let's execute this command:
 ```
 [bash Downloads]$ pwd
-/Users/<MY_user_id>/Downloads
+/Users/<MY_USER_id>/Downloads
 [bash Downloads]$ ls -ltra node-v22.11.0-linux-arm64
 total 1064
 drwxr-xr-x@ 4 staff   128B Oct 29 02:28 share
