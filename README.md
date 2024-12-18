@@ -38,7 +38,7 @@ Therefore, I did not notice any performance degradation when using RMPP and/or i
 **(REQUIRED)** Make sure you are aware how to enable the "USB Web interface" on RMPP. Consult **Reference 3** section "How to enable USB transfer on your reMarkable" to get to know more about it. <br>
 
 # ======== Configuration, usage | Use case 1 | Integrate the **rm_calendar** with the rm_calendar_memo ====
-**On your Mac or Windows, unpack/extract/move the current project files and move them into the folder with the name "rm_calendar_memo". This folder name will be needed further**. <br>
+**On your Mac or Windows, unpack/extract/move the current project files and move them into the folder with the name `rm_calendar_memo`. This folder name will be needed further**. <br>
 See file of the systemd service, where the path matters: https://github.com/anti22dot/rm_calendar_memo/blob/99898eec5ba9e86e26b640dcbc294bc0b8d367bf/rm_calendar_memo.service#L8
 * <a name="use_case1_step_a"></a> **[Use case 1 | Step A](#use_case1_step_a)** Download the prebuild Node.js binaries from here https://nodejs.org/en/download/prebuilt-binaries <br>
 **Make sure** to specify the **22.X** (at the time of this memo, 22.11), **"Linux"** as platform, **"ARM64"** as CPU architecture. <br>
