@@ -246,7 +246,7 @@ It's needed to give the right permissions to the application files:
 chmod 755 /home/root/rm_calendar_memo/*
 chmod 644 /home/root/rm_calendar_memo/rm_calendar_memo.service
 ```
-Now, it's needed to copy the "rm_calendar_memo.service" into the SystemD directory of the RMPP, like so:
+Now, it's needed to copy the `rm_calendar_memo.service` into the SystemD directory of the RMPP, like so:
 ```
 cp /home/root/rm_calendar_memo/rm_calendar_memo.service /usr/lib/systemd/system/rm_calendar_memo.service
 ```
