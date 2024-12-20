@@ -116,7 +116,7 @@ LICENSE                                           100%  791   789.8KB/s   00:00
 ```
 **NOTE**: The value of `<RMPP_SSH_ROOT_PASSWORD>` is visible from the `General > About > Copyrights and licenses` page of the RMPP itself. <br>
 
-* <a name="use_case1_step_d"></a> **[Use case 1 | Step D](#use_case1_step_d)** In the existing "Terminal 1", verify the uploaded files. Modify `.env`. In the "Terminal 2", upload the "rm_calendar_memo" folder. <br>
+* <a name="use_case1_step_d"></a> **[Use case 1 | Step D](#use_case1_step_d)** In the existing `Terminal 1`, verify the uploaded files. Modify `.env`. In the "Terminal 2", upload the "rm_calendar_memo" folder. <br>
 ```
 root@<MY_RMPP_HOSTNAME>:~# pwd
 /home/root
