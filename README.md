@@ -188,7 +188,7 @@ root@<RMPP_IP_ADDRESS>'s password:
 # It would take some time to do that.
 ```
 
-* <a name="use_case1_step_e"></a> **[Use case 1 | Step E](#use_case1_step_e)** In the existing "Terminal 1", verify the uploaded files. Update permissions. Move the `rm_calendar_memo/rm_calendar` directory to xochitl. Start the service and enable it to start on the reboot.
+* <a name="use_case1_step_e"></a> **[Use case 1 | Step E](#use_case1_step_e)** In the existing `Terminal 1`, verify the uploaded files. Update permissions. Move the `rm_calendar_memo/rm_calendar` directory to xochitl. Start the service and enable it to start on the reboot.
 ```
 root@<MY_RMPP_HOSTNAME>:~# ls -ltra
 drwxr-xr-x    4 root     root          4096 Nov 23 13:52 ..
