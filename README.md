@@ -32,7 +32,7 @@ The CPU and RAM (%VSZ) consumptions were showing `0%`/`0%` almost all the time, 
 Therefore, I did not notice any performance degradation when using RMPP and/or in particularly writing on that particular document `Todo`. <br>
 **(FEATURE)** These implementation scripts do not require Internet or any kind of net to work, it works locally, on RMPP. The implementation scripts do not send any data outside the RMPP. <br>
 **(LIMITATIONS)** For the **supported RM+versions"** refer to the `Tested environments` section of the current memo. <br>
-**(REQUIRED/LIMITATION)** This implementation works only in "Dev mode" Make sure the "Developer mode" is enabled. Consult the **Reference 1** about it. <br>
+**(REQUIRED/LIMITATION)** This implementation works only in `Dev mode`. Make sure the "Developer mode" is enabled. Consult the **Reference 1** about it. <br>
 **(REQUIRED)** Know your "<RMPP_SSH_ROOT_PASSWORD>" password for SSH. Consult the **Reference 1**, section `Accessing your reMarkable Paper Pro via SSH`. <br>
 **(REQUIRED)** The "ssh" command available from the terminal. On MacOS it is available by default. For Windows consult **Reference 2**. <br>
 **(REQUIRED)** Make sure you are aware how to enable the `USB Web interface` on RMPP. Consult **Reference 3** section "How to enable USB transfer on your reMarkable" to get to know more about it. <br>
