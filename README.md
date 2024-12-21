@@ -64,7 +64,7 @@ drwx------@ 9 staff   288B Nov 23 16:28 ..
 * <a name="use_case1_step_b"></a> **[Use case 1 | Step B](#use_case1_step_b)**: Connect your RMPP device to your Mac/Windows via the USB C cable. After that you need to make sure the `USB web interface` is enabled. Open "Terminal 1". 
 After that, navigate to the `Settings` - `Storage`, and there would be section `USB web interface`. <br>
 Locate the IP address of your RMPP, written after the "http://". Note it down somewhere in your notepad as `<RMPP_IP_ADDRESS>`. <br>
-About "USB web interface" consult **Reference 3**. Open the terminal (let's label it "Terminal 1") on your Mac or Windows and execute these commands:
+About "USB web interface" consult **Reference 3**. Open the terminal (let's label it `Terminal 1`) on your Mac or Windows and execute these commands:
 ```
 ssh root@<RMPP_IP_ADDRESS>
 root@<RMPP_IP_ADDRESS>'s password:
