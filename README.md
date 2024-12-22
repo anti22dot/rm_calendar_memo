@@ -287,7 +287,7 @@ systemctl enable rm_calendar_memo.service
 * The documentation is removed for this use case, for now. But it's possible. See earlier version 1.0.0, where it was present.
 
 ## ======== Optional, Debugging, Extras ====
-**(OPTIONAL/DEBUGGING)** The frequency of the dynamic changes of the file "suspended.png" is set to `0.5 seconds`, by default, but can be modified. <br>
+**(OPTIONAL/DEBUGGING)** The frequency of the dynamic changes of the file `suspended.png` is set to `0.5 seconds`, by default, but can be modified. <br>
 To modify it open the file "periodically_update_suspended_png.sh" and change the value of the `sleep 0.5` command to your value of choice. <br>
 * <a name="optional1"></a> **[Optinal procedure 1 | Enable the DEBUG logging:](#optional1)**
 If you look into the ".env" file it has variable `RM_CALENDAR_APP_DEBUG`. This variable used for troubleshooting purposes. <br>
