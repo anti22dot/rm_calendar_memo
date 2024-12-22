@@ -358,7 +358,7 @@ Check the instructions from the **Use case 1 | Step D** , but in this case, only
 ```
 [bash Downloads]$ scp -r 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.pdf root@<RMPP_IP_ADDRESS>:/home/root/.local/share/remarkable/xochitl/
 ```
-**NOTE**: The point is that the RMPP would store all the "strokes/markings" within the "430f8cdf-e2e8-412c-b7e3-5ebf3b126bff/" **directory itself**, <br>
+**NOTE**: The point is that the RMPP would store all the `strokes/markings` within the "430f8cdf-e2e8-412c-b7e3-5ebf3b126bff/" **directory itself**, <br>
 and we are not touching that files, but only replacing the original PDF file. <br>
 **Third**: It's needed to also update the **".env"** file with the new <HASH_ID>. For that, first, download the **.content** file from the RMPP: <br>
 ```
