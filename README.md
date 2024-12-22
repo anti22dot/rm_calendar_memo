@@ -421,7 +421,7 @@ In other words, in this particular use case, I have added one page, right after 
                 }
             },
 ```
-**NOTE**: You might be seeing some other IDs, which has the tag `"deleted"`. Please ignore them. Because those are the pages, that were deleted, <br>
+**NOTE**: You might be seeing some other IDs, which has the tag `deleted`. Please ignore them. Because those are the pages, that were deleted, <br>
 while working on that PDF document. So, do not pay attention to them. 
 ```
 {
