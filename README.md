@@ -352,7 +352,7 @@ rm -f 23.11.24.png 23.11.24.new.composited.png 23.11.24.new.composited.png
 ```
 * <a name="optional2"></a> **[Optinal procedure 2 | Expand the PDF file:](#optional2)** <br>
 **First | Use this step only if you have updated your existing PDF file, on the Windows/Mac/Linux and would like to update it on your RMPP** <br>
-**Second | Also, make sure to only Extend the original PDF, and Not "cut" it, like do not remove existing pages, only add pages, if you need.** <br>
+**Second | Also, make sure to only Extend the original PDF, and Not cut it, like do not remove existing pages, only add pages, if you need.** <br>
 Check the instructions from the **Use case 1 | Step D** , but in this case, only reupload the single file **430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.pdf** <br>
 (do not re-upload the other files or folders)
 ```
