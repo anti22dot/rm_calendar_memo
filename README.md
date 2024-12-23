@@ -390,7 +390,7 @@ root@10.11.99.1's password:
             },
 ```
 **NOTE**: This id **9004cc86-a0d0-4da6-b663-04e8987423a5** is related to the page **106** - **28 February 2025**, as of today's writing (**22 Nov**). <br>
-**NOTE**: If that page, corresponding to that `<HASH_ID>`, was not modified, meaning, the strokes were not added, it would show value "Blank", as above. <br>
+**NOTE**: If that page, corresponding to that `<HASH_ID>`, was not modified, meaning, the strokes were not added, it would show value `"Blank"`, as above. <br>
 Now, IF you have added the pages to the original **430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.pdf**, then the next page would go after that above page. <br>
 In other words, in this particular use case, I have added one page right after the above. And here an example of what I was seeing after that above `<HASH_ID>`:
 ```
