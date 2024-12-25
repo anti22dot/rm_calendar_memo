@@ -135,7 +135,7 @@ drwx------   11 root     root          4096 Nov 23 15:50 ..
 ```
 Also we need to give the executable bits to the "node" binary. Execute this command:
 ```
-root@<MY_RMPP_HOSTNAME>:~# chmod +x node node-v22.11.0-linux-arm64/bin/*
+root@<MY_RMPP_HOSTNAME>:~# chmod +x node-v22.11.0-linux-arm64/bin/*
 ```
 Next, on your MacOS or Windows, open file ".env" inside the folder with the unpacked project files.
 Provide the appropriate values to the following parameters after the `=` sign, accordingly:
