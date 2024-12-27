@@ -82,7 +82,7 @@ mount -o remount,rw /
 ```
 
 * <a name="use_case1_step_c"></a> **[Use case 1 | Step C](#use_case1_step_c)** Open `Terminal 2`. Upload the Node.js runtime to the RMPP.
-Previous steps have confirmed that you have the SSH connection from your MacOS or Windows to your RMPP device. <br>
+The previous steps have confirmed that you have the SSH connection from your MacOS or Windows to your RMPP device. <br>
 In the further steps we would transfer the files using the SCP rather than Web UI, because we need to transfer them into the specific location. <br>
 At this point, depending on the OS type, there can be used many tools to transfer the files using SFTP, check **Reference 4**. <br>
 In this manual I would be using tool called `scp`, and would be using MacOS platform. Open another **Terminal 2**, navigate to folder with Node.js. <br>
