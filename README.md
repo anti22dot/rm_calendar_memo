@@ -477,6 +477,7 @@ root@<MY_RMPP_HOSTNAME>:~# systemctl restart rm_calendar_memo.service
 * Tested combination 2 | Device: Remarkable Paper Pro, firmware: 3.15.3.0 | node22.10.0_lin_arm64, sharp0.33.5
 * Tested combination 3 | Device: Remarkable Paper Pro, firmware: 3.16.0.60 | node22.10.0_lin_arm64, sharp0.33.5
 * Tested combination 4 | Device: Remarkable Paper Pro, firmware: 3.16.1.0 | node22.10.0_lin_arm64, sharp0.33.5
+* Tested combination 4 | Device: Remarkable Paper Pro, firmware: 3.17.0.62 | node22.10.0_lin_arm64, sharp0.33.5
 ```
 
 # ======== References ========
