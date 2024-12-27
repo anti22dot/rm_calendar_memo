@@ -35,7 +35,7 @@ Therefore, I did not notice any performance degradation when using RMPP and/or i
 **(REQUIRED/LIMITATION)** This implementation works only in `Dev mode`. Make sure the "Developer mode" is enabled. Consult the **Reference 1** about it. <br>
 **(REQUIRED)** Know your "<RMPP_SSH_ROOT_PASSWORD>" password for SSH. Consult the **Reference 1**, section `Accessing your reMarkable Paper Pro via SSH`. <br>
 **(REQUIRED)** The "ssh" command available from the terminal. On MacOS it is available by default. For Windows consult **Reference 2**. <br>
-**(REQUIRED)** Make sure you are aware how to enable the `USB Web interface` on RMPP. Consult **Reference 3** section "How to enable USB transfer on your reMarkable" to get to know more about it. <br>
+**(REQUIRED)** Make sure you are aware how to enable the `USB Web interface` on RMPP. Consult **Reference 3** section **"How to enable USB transfer on your reMarkable"** to get to know more about it. <br>
 
 # ======== Configuration, usage | Use case 1 | Integrate the **rm_calendar** with the rm_calendar_memo ====
 **On your Mac or Windows, unpack/extract/move the current project files and move them into the folder with the name `rm_calendar_memo`. This folder name will be needed further**. <br>
