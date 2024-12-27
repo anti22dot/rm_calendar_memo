@@ -133,7 +133,7 @@ drwxr-xr-x    4 root     root          4096 Nov 23 15:47 share
 drwxr-xr-x    6 root     root          4096 Nov 23 15:47 .
 drwx------   11 root     root          4096 Nov 23 15:50 ..
 ```
-Also we need to give the executable bits to the "node" binary. Execute this command:
+Also we need to give the executable bits to the `node` binary. Execute this command:
 ```
 root@<MY_RMPP_HOSTNAME>:~# chmod +x node-v22.11.0-linux-arm64/bin/*
 ```
