@@ -1,0 +1,14 @@
+[Unit]
+Description=periodically update the remarkable paper pro suspended picture
+After=home.mount
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sh -c 'mount -o remount,rw /'
+ExecStart=/home/root/rm_calendar_memo/periodically_update_suspended_png.sh
+StandardOutput=append:/home/root/rm_calendar_memo/rm_calendar_memo.log
+StandardError=append:/home/root/rm_calendar_memo/rm_calendar_memo.log
+EnvironmentFile=/home/root/rm_calendar_memo/.env
+
+[Install]
+WantedBy=multi-user.target
