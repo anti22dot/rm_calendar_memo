@@ -14,7 +14,9 @@ References <br>
 * The "Calendar Memo" term has been borrowed from the Onyx Boox eink devices, since they have the similar kind of separate Android application, <br>
 which allows to write useful notes for the specific date within the app, and then display the notes relevant to the current date of looking.
 * The similar concept has been taken when designing the functionality of this implementation on the RMPP.
-
+* The current repo has been broked down into 2 repos, depending on the final sleep screen layout: **"layout1_singlepage_sleepscreen"** and **"layout2_fourpages_sleepscreen"**. <br>
+* **Layout 2 | Sleep screen example**: ![28 12 24 final notes new composited](https://github.com/user-attachments/assets/1e830106-6595-4adb-a0ce-6e5cafb861a5)
+* 
 # ======== Requirements, limitations, features ====
 **(LIMITATION)** The file `rm_calendar_memo/layout1_singlepage_sleepscreen/rm_calendar/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.pdf` contains the PDF calendar, currently, until 28 February 2025. <br>
 **(LIMITATION)** The file `rm_calendar_memo/layout2_fourpages_sleepscreen/rm_calendar/2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.pdf` contains the PDF calendar, currently, until 30 March 2025. <br>
