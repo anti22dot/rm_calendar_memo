@@ -53,19 +53,19 @@ Hit on "Download `<YOUR_CHOSEN_VERSION>` button. Unpack that archive into the se
 For example, `<PATH_TO>/node-v22.11.0-linux-arm64` folder:
 ```
 [bash Downloads]$ ls -ltra |grep node
-drwxr-xr-x@  9 staff   288B Oct 29 02:33 node-v22.11.0-linux-arm64
--rw-r--r--@  1 staff    27M Nov 23 16:28 node-v22.11.0-linux-arm64.tar.xz
+drwxr-xr-x@  9 staff   288B Jan  3 02:33 node-v22.11.0-linux-arm64
+-rw-r--r--@  1 staff    27M Jan  3 16:28 node-v22.11.0-linux-arm64.tar.xz
 [bash Downloads]$ ls -ltra node-v22.11.0-linux-arm64
 total 1064
-drwxr-xr-x@ 4 staff   128B Oct 29 02:28 share
-drwxr-xr-x@ 3 staff    96B Oct 29 02:28 lib
-drwxr-xr-x@ 3 staff    96B Oct 29 02:31 include
-drwxr-xr-x@ 6 staff   192B Oct 29 02:31 bin
--rw-r--r--@ 1 staff    39K Oct 29 02:33 README.md
--rw-r--r--@ 1 staff   136K Oct 29 02:33 LICENSE
--rw-r--r--@ 1 staff   354K Oct 29 02:33 CHANGELOG.md
-drwxr-xr-x@ 9 staff   288B Oct 29 02:33 .
-drwx------@ 9 staff   288B Nov 23 16:28 ..
+drwxr-xr-x@ 4 staff   128B Jan  3 02:28 share
+drwxr-xr-x@ 3 staff    96B Jan  3 02:28 lib
+drwxr-xr-x@ 3 staff    96B Jan  3 02:31 include
+drwxr-xr-x@ 6 staff   192B Jan  3 02:31 bin
+-rw-r--r--@ 1 staff    39K Jan  3 02:33 README.md
+-rw-r--r--@ 1 staff   136K Jan  3 02:33 LICENSE
+-rw-r--r--@ 1 staff   354K Jan  3 02:33 CHANGELOG.md
+drwxr-xr-x@ 9 staff   288B Jan  3 02:33 .
+drwx------@ 9 staff   288B Jan  3 16:28 ..
 ```
 * <a name="use_case1_step_b"></a> **[Use case 1 | Step B](#use_case1_step_b)**: Connect your RMPP device to your Mac/Windows via the USB C cable. After that you need to make sure the `USB web interface` is enabled. Open `Terminal 1`. 
 After that, navigate to the `Settings` - `Storage`, and there would be section `USB web interface`. <br>
@@ -98,15 +98,15 @@ From inside that folder let's execute this command:
 /Users/<MY_USER_ID>/Downloads
 [bash Downloads]$ ls -ltra node-v22.11.0-linux-arm64
 total 1064
-drwxr-xr-x@ 4 staff   128B Oct 29 02:28 share
-drwxr-xr-x@ 3 staff    96B Oct 29 02:28 lib
-drwxr-xr-x@ 3 staff    96B Oct 29 02:31 include
-drwxr-xr-x@ 6 staff   192B Oct 29 02:31 bin
--rw-r--r--@ 1 staff    39K Oct 29 02:33 README.md
--rw-r--r--@ 1 staff   136K Oct 29 02:33 LICENSE
--rw-r--r--@ 1 staff   354K Oct 29 02:33 CHANGELOG.md
-drwxr-xr-x@ 9 staff   288B Oct 29 02:33 .
-drwx------@ 9 staff   288B Nov 23 16:28 ..
+drwxr-xr-x@ 4 staff   128B Jan  3 02:28 share
+drwxr-xr-x@ 3 staff    96B Jan  3 02:28 lib
+drwxr-xr-x@ 3 staff    96B Jan  3 02:31 include
+drwxr-xr-x@ 6 staff   192B Jan  3 02:31 bin
+-rw-r--r--@ 1 staff    39K Jan  3 02:33 README.md
+-rw-r--r--@ 1 staff   136K Jan  3 02:33 LICENSE
+-rw-r--r--@ 1 staff   354K Jan  3 02:33 CHANGELOG.md
+drwxr-xr-x@ 9 staff   288B Jan  3 02:33 .
+drwx------@ 9 staff   288B Jan  3 16:28 ..
 scp -r ./node-v22.11.0-linux-arm64 root@<RMPP_IP_ADDRESS>:/home/root/
 root@<RMPP_IP_ADDRESS>'s password:
 # It would prompt you for the password, so, enter it and then hit "enter":
@@ -117,7 +117,6 @@ root@<RMPP_IP_ADDRESS>'s password:
 no-tty.js                                         100%   44    44.3KB/s   00:00
 file-exists.js                                    100%  663   548.7KB/s   00:00
 is-windows.js                                     100%   46    51.8KB/s   00:00
-LICENSE                                           100%  791   789.8KB/s   00:00
 ...
 ```
 **NOTE**: The value of `<RMPP_SSH_ROOT_PASSWORD>` is visible from the `General > About > Copyrights and licenses` page of the RMPP itself. <br>
@@ -127,21 +126,27 @@ LICENSE                                           100%  791   789.8KB/s   00:00
 root@<MY_RMPP_HOSTNAME>:~# pwd
 /home/root
 root@<MY_RMPP_HOSTNAME>:~# ls -ltra |grep node
-drwxr-xr-x    6 root     root          4096 Nov 23 15:47 node-v22.11.0-linux-arm64
+drwxr-xr-x    6 root     root          4096 Jan  3 15:47 node-v22.11.0-linux-arm64
 root@<MY_RMPP_HOSTNAME>:~# ls -ltra node-v22.11.0-linux-arm64/
--rw-r--r--    1 root     root        139053 Nov 23 15:46 LICENSE
-drwxr-xr-x    3 root     root          4096 Nov 23 15:46 include
-drwxr-xr-x    2 root     root          4096 Nov 23 15:46 bin
--rw-r--r--    1 root     root        362490 Nov 23 15:46 CHANGELOG.md
-drwxr-xr-x    3 root     root          4096 Nov 23 15:47 lib
--rw-r--r--    1 root     root         40117 Nov 23 15:47 README.md
-drwxr-xr-x    4 root     root          4096 Nov 23 15:47 share
-drwxr-xr-x    6 root     root          4096 Nov 23 15:47 .
-drwx------   11 root     root          4096 Nov 23 15:50 ..
+-rw-r--r--    1 root     root        139053 Jan  3 15:46 LICENSE
+drwxr-xr-x    3 root     root          4096 Jan  3 15:46 include
+drwxr-xr-x    2 root     root          4096 Jan  3 15:46 bin
+-rw-r--r--    1 root     root        362490 Jan  3 15:46 CHANGELOG.md
+drwxr-xr-x    3 root     root          4096 Jan  3 15:47 lib
+-rw-r--r--    1 root     root         40117 Jan  3 15:47 README.md
+drwxr-xr-x    4 root     root          4096 Jan  3 15:47 share
+drwxr-xr-x    6 root     root          4096 Jan  3 15:47 .
+drwx------   11 root     root          4096 Jan  3 15:50 ..
 ```
 Also we need to give the executable bits to the `node` binary. Execute this command:
 ```
 root@<MY_RMPP_HOSTNAME>:~# chmod +x node-v22.11.0-linux-arm64/bin/*
+```
+Let's also create the **"/home/root/rm_calendar_memo"** directory within the same **Terminal 1**:
+```
+root@<MY_RMPP_HOSTNAME>:~# pwd
+/home/root
+root@<MY_RMPP_HOSTNAME>:~# mkdir rm_calendar_memo
 ```
 Next, on your MacOS or Windows, open file ".env" inside the folder with the unpacked project files.
 Provide the appropriate values to the following parameters after the `=` sign, accordingly:
@@ -151,81 +156,89 @@ CALENDAR_MEMO_ROOT=/home/root/rm_calendar_memo
 TODAYS_TODO_NEW_ABSOLUTE_FILENAME=/usr/share/remarkable/suspended.png
 NODE_ROOT=
 # For the "ORIGINAL_DOC_HASH_ID" after the "=" equal sign there should be valid rm directory-specific HASH ID.
-# see "README.md". EXAMPLE: 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff
-ORIGINAL_DOC_HASH_ID=430f8cdf-e2e8-412c-b7e3-5ebf3b126bff
-# After the "=" there should be valid rm page-specific HASH ID, see "README.md".
-# see "README.md". EXAMPLE: FILE_21_11_24=0537ae0b-1eb3-407e-b285-c02bdbee8af3
+# see "README.md". EXAMPLE: 2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d
+ORIGINAL_DOC_HASH_ID=2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d
 ...
 # Omitted further lines here.
 ...
 ```
 **NOTE**: Do not modify the other variables. You only need to modify one variable here, **NODE_ROOT=** which is path to `root` of the Node.js dir on RMPP. <br>
 **NOTE**: For example, in my use case: **NODE_ROOT=/home/root/node-v22.11.0-linux-arm64**. <br>
-Verify the project files, they should look similar to below:
+In this demonstration, I have chosen the **layout2_fourpages_sleepscreen**. Verify the project files, they should look similar to below:
+Change the directory to the chosen layout, **layout2_fourpages_sleepscreen**:
 ```
-[bash Downloads]$ ls -ltra |grep rm_calendar
-drwxr-xr-x@  9 staff   288B Nov 23 17:07 rm_calendar_memo
-[bash Downloads]$ ls -ltra rm_calendar_memo/
-total 200
-drwxr-xr-x@  5 staff   160B Oct 21 22:11 ..
--rw-r--r--   1 staff   3.8K Nov 23 20:32 periodically_update_suspended_png.sh
--rw-r--r--@  1 staff   324B Nov 23 20:33 open_composite_png.js
--rw-r--r--@  1 staff   249B Nov 23 20:33 open_resize_png.js
--rw-r--r--   1 staff    11K Nov 23 14:34 LICENSE
--rw-r--r--   1 staff   267B Nov 23 14:34 get_metadata.js
-drwxr-xr-x  14 staff   448B Nov 23 14:34 node_modules
--rw-r--r--   1 staff    17K Nov 23 14:34 package-lock.json
--rw-r--r--@  1 staff    51B Nov 23 14:34 package.json
--rw-r--r--   1 staff     0B Nov 23 14:34 rm_calendar_memo.log
--rw-r--r--   1 staff   472B Nov 23 14:34 rm_calendar_memo.service
-drwxr-xr-x  11 staff   352B Nov 23 15:31 calendars
--rw-r--r--@  1 staff   5.7K Nov 23 15:33 .env
-drwxr-xr-x  17 staff   544B Nov 23 15:34 .
-drwxr-xr-x@  9 staff   288B Nov 23 15:40 rm_calendar
--rw-r--r--@  1 staff    33K Nov 23 17:07 README.md
+[bash Downloads]$ ls -ltra
+total 72
+drwx------@  5 staff   160B Oct 21 22:11 ..
+-rw-r--r--   1 staff   1.0K Jan  3 22:08 LICENSE
+drwxr-xr-x  14 staff   448B Jan  3 22:08 layout1_singlepage_sleepscreen
+drwx------@  7 staff   224B Jan  3 22:08 .
+drwxr-xr-x  16 staff   512B Jan  3 22:08 layout2_fourpages_sleepscreen
+drwxr-xr-x  13 staff   416B Jan  3 22:14 .git
+-rw-r--r--@  1 staff    30K Jan  3 22:18 README.md
+[bash Downloads]$ cd layout2_fourpages_sleepscreen/
+[bash layout2_fourpages_sleepscreen]$ ls -ltra
+total 352
+drwx------@  7 staff   224B Jan  3 22:08 ..
+-rw-r--r--   1 staff    24K Jan  3 22:08 .env
+-rw-r--r--   1 staff    92K Jan  3 22:08 blank.png
+drwxr-xr-x  93 staff   2.9K Jan  3 22:08 calendars
+-rwxr-xr-x   1 staff   267B Jan  3 22:08 get_metadata.js
+drwxr-xr-x   6 staff   192B Jan  3 22:08 labels
+drwxr-xr-x  14 staff   448B Jan  3 22:08 node_modules
+-rwxr-xr-x   1 staff   827B Jan  3 22:08 open_composite_png.js
+-rwxr-xr-x   1 staff   306B Jan  3 22:08 open_prepare_png.js
+-rwxr-xr-x   1 staff   319B Jan  3 22:08 open_resize_png.js
+-rwxr-xr-x   1 staff    17K Jan  3 22:08 package-lock.json
+-rwxr-xr-x   1 staff    51B Jan  3 22:08 package.json
+-rw-r--r--   1 staff   7.5K Jan  3 22:08 periodically_update_suspended_png.sh
+drwxr-xr-x   8 staff   256B Jan  3 22:08 rm_calendar
+drwxr-xr-x  16 staff   512B Jan  3 22:08 .
+-rw-r--r--   1 staff   472B Jan  3 22:08 rm_calendar_memo.service
 ```
-From MAC/WIN | It's now needed to transfer the entire dir **"rm_calendar_memo"** into the RMPP, under the **"/home/root/"**. In my use case I used "scp":
+From MAC/WIN | It's now needed to transfer the entire content of the chosen layout, **layout2_fourpages_sleepscreen**, into the RMPP, under the **"/home/root/rm_calendar_memo/"**. In my use case I used "scp":
 ```
-[bash Downloads]$ scp -r ./rm_calendar_memo root@<RMPP_IP_ADDRESS>:/home/root/
+[bash layout2_fourpages_sleepscreen]$ pwd
+/Users/<MY_USER_ID>/Downloads/layout2_fourpages_sleepscreen
+[bash Downloads]$ scp -r * root@<RMPP_IP_ADDRESS>:/home/root/rm_calendar_memo/
 root@<RMPP_IP_ADDRESS>'s password:
 # It would prompt you for the password, so, enter it and then hit "enter":
 <RMPP_SSH_ROOT_PASSWORD>
 # After that, the entire folder "rm_calendar_memo" would be uploaded into RMPP under "/home/root/".
 # It would take some time to do that.
 ```
-
 * <a name="use_case1_step_e"></a> **[Use case 1 | Step E](#use_case1_step_e)** In the existing `Terminal 1`, verify the uploaded files. Update permissions. Move the `rm_calendar_memo/rm_calendar` directory to **xochitl**. Start the service and enable it to start on the reboot.
 ```
 root@<MY_RMPP_HOSTNAME>:~# ls -ltra
-drwxr-xr-x    4 root     root          4096 Nov 23 13:52 ..
-drwxr-xr-x    3 root     root          4096 Nov 23 13:52 .local
-drwxr-xr-x    3 root     root          4096 Nov 23 13:52 .journal
-drwxr-xr-x    3 root     root          4096 Nov 23 13:52 .cache
-drwxr-xr-x    2 root     root          4096 Nov 23 13:56 .dropbear
-drwx------    2 root     root          4096 Nov 23 14:25 .ssh
-drwxr-xr-x    4 root     root          4096 Nov 23 18:49 .config
--rw-------    1 root     root         14419 Nov 23 15:48 .bash_history
-drwxr-xr-x    3 root     root          4096 Nov 23 15:48 .memfault
--rw-------    1 root     root         21217 Nov 23 16:07 .viminfo
-drwxr-xr-x    6 root     root          4096 Nov 23 16:42 node-v22.11.0-linux-arm64
-drwx------   11 root     root          4096 Nov 23 18:33 .
-drwxr-xr-x    3 root     root          4096 Nov 23 18:33 rm_calendar_memo
+drwxr-xr-x    4 root     root          4096 Jan  3 13:52 ..
+drwxr-xr-x    3 root     root          4096 Jan  3 13:52 .local
+drwxr-xr-x    3 root     root          4096 Jan  3 13:52 .journal
+drwxr-xr-x    3 root     root          4096 Jan  3 13:52 .cache
+drwxr-xr-x    2 root     root          4096 Jan  3 13:56 .dropbear
+drwx------    2 root     root          4096 Jan  3 14:25 .ssh
+drwxr-xr-x    4 root     root          4096 Jan  3 18:49 .config
+-rw-------    1 root     root         14419 Jan  3 15:48 .bash_history
+drwxr-xr-x    3 root     root          4096 Jan  3 15:48 .memfault
+-rw-------    1 root     root         21217 Jan  3 16:07 .viminfo
+drwxr-xr-x    6 root     root          4096 Jan  3 16:42 node-v22.11.0-linux-arm64
+drwx------   11 root     root          4096 Jan  3 18:33 .
+drwxr-xr-x    3 root     root          4096 Jan  3 18:33 rm_calendar_memo
 root@<MY_RMPP_HOSTNAME>:~# ls -ltra rm_calendar_memo/
--rw-r--r--    1 root     root           472 Oct 22 06:21 rm_calendar_memo.service
--rwxr-xr-x    1 root     root            51 Oct 22 06:21 package.json
--rwxr-xr-x    1 root     root         16909 Oct 22 06:21 package-lock.json
--rwxr-xr-x    1 root     root           267 Oct 22 06:21 get_metadata.js
--rwxr-xr-x    1 root     root         11357 Oct 22 06:21 LICENSE
--rwxr-xr-x    1 root     root         33835 Oct 29 17:49 README.md
-drwxr-xr-x   14 root     root          4096 Nov 17 16:42 node_modules
--rw-r--r--    1 root     root            54 Nov 17 18:17 .vimrc
--rw-r--r--    1 root     root           324 Nov 21 19:33 open_composite_png.js
--rwxr-xr-x    1 root     root           249 Nov 21 19:33 open_resize_png.js
-drwxr-xr-x    2 root     root          4096 Nov 21 20:11 calendars
--rwxr-xr-x    1 root     root          3864 Nov 23 16:20 periodically_update_suspended_png.sh
--rwxrwxrwx    1 root     root          5829 Nov 23 16:29 .env
--rwxrwxrwx    1 root     root          288B Nov 23 16:29 rm_calendar
--rwxrwxrwx    1 root     root         39321 Nov 23 16:29 rm_calendar_memo.log
+-rwxr-xr-x    1 root     root           224 Jan  3 22:08 .env
+-rwxr-xr-x    1 root     root         94643 Jan  3 22:08 blank.png
+-rwxr-xr-x    1 root     root          2976 Jan  3 22:08 calendars
+-rwxr-xr-x    1 root     root           267 Jan  3 22:08 get_metadata.js
+-rwxr-xr-x    1 root     root           192 Jan  3 22:08 labels
+drwxr-xr-x   14 root     root           448 Jan  3 22:08 node_modules
+-rw-r--r--    1 root     root           827 Jan  3 22:08 open_composite_png.js
+-rw-r--r--    1 root     root           306 Jan  3 22:08 open_prepare_png.js
+-rwxr-xr-x    1 root     root           319 Jan  3 22:08 open_resize_png.js
+drwxr-xr-x    2 root     root         16909 Jan  3 22:08 package-lock.json
+-rwxr-xr-x    1 root     root            51 Jan  3 22:08 package.json
+-rwxrwxrwx    1 root     root          7698 Jan  3 22:08 periodically_update_suspended_png.sh
+-rwxrwxrwx    1 root     root           256 Jan  3 22:08 rm_calendar
+-rwxrwxrwx    1 root     root           472 Jan  3 22:08 rm_calendar_memo.service
+-rwxrwxrwx    1 root     root            0B Jan  3 23:15 rm_calendar_memo.log
 ```
 Move the directory `rm_calendar_memo/rm-calendar` to the `/home/root/.local/share/remarkable/xochitl/` :
 ```
@@ -237,15 +250,14 @@ Then verify the directory `/home/root/.local/share/remarkable/xochitl/`:
 root@<MY_RMPP_HOSTNAME>:~/.local/share/remarkable/xochitl# pwd
 /home/root/.local/share/remarkable/xochitl
 root@<MY_RMPP_HOSTNAME>:~/.local/share/remarkable/xochitl# ls -ltra
-drwxr-xr-x    8 root     root          4096 Nov 21 19:46 ..
--rw-r--r--    1 root     root       4239569 Nov 21 21:40 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.pdf
--rw-r--r--    1 root     root            34 Nov 21 21:40 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.local
--rw-r--r--    1 root     root           636 Nov 22 11:59 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.pagedata
-drwxr-xr-x    2 root     root          4096 Nov 23 16:16 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.thumbnails
-drwxr-xr-x    2 root     root          4096 Nov 23 16:16 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff
--rw-r--r--    1 root     root           243 Nov 23 16:44 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.metadata
--rw-r--r--    1 root     root         50580 Nov 23 16:44 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.content
-drwxr-xr-x    4 root     root         20480 Nov 23 16:44 .
+drwxr-xr-x    8 root     root          4096 Jan  3 19:46 ..
+-rw-r--r--    1 root     root      10230309 Jan  3 22:08 2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.pdf
+-rw-r--r--    1 root     root            34 Jan  3 22:08 2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.local
+-rw-r--r--    1 root     root           358 Jan  3 22:08 2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.pagedata
+drwxr-xr-x    2 root     root          3520 Jan  3 22:08 2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.thumbnails
+-rw-r--r--    1 root     root           265 Jan  3 22:08 2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.metadata
+-rw-r--r--    1 root     root         22562 Jan  3 22:08 2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.content
+drwxr-xr-x    4 root     root         20480 Jan  3 16:44 .
 ```
 It's needed to give the right permissions to the application files:
 ```
@@ -274,7 +286,7 @@ root@<MY_RMPP_HOSTNAME>:~# systemctl start rm_calendar_memo.service
 root@<MY_RMPP_HOSTNAME>:~# systemctl status -l rm_calendar_memo.service
 ● rm_calendar_memo.service - periodically update the remarkable paper pro suspended picture
      Loaded: loaded (/usr/lib/systemd/system/rm_calendar_memo.service; enabled; vendor preset: disabled)
-     Active: active (running) since Sun 2024-10-20 18:45:09 UTC; 1s ago
+     Active: active (running) since Sun 2025-01-03 18:45:09 UTC; 1s ago
    Main PID: 59034 (periodically_up)
       Tasks: 2 (limit: 1588)
      Memory: 516.0K
@@ -282,7 +294,7 @@ root@<MY_RMPP_HOSTNAME>:~# systemctl status -l rm_calendar_memo.service
              ├─ 59034 /bin/bash /home/root/rm_calendar_memo/periodically_update_suspended_png.sh
              └─ 59038 sleep 5
 
-Nov 23 18:45:09 <MY_RMPP_HOSTNAME> systemd[1]: Started periodically update the remarkable paper pro suspended picture.
+Jan  3 18:45:09 <MY_RMPP_HOSTNAME> systemd[1]: Started periodically update the remarkable paper pro suspended picture.
 ```
 To make sure the scripts would run after the reboot, execute this command:
 ```
@@ -303,7 +315,7 @@ After changing that environment variable value, it's needed to restart the Syste
 So, it's useful for debugging purposes. Here is the sample output of the `rm_calendar_memo.log` when debug is enabled:
 ```
 ========
-Right now is Sat Nov 23 16:28:54 UTC 2024. Searching for the /home/root/.local/share/remarkable/xochitl/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.thumbnails/e4013870-9f47-4dd8-a4aa-b33b4e726108.png file.
+Right now is Sat Jan  3 16:28:54 UTC 2024. Searching for the /home/root/.local/share/remarkable/xochitl/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.thumbnails/e4013870-9f47-4dd8-a4aa-b33b4e726108.png file.
 * The file /home/root/.local/share/remarkable/xochitl/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.thumbnails/e4013870-9f47-4dd8-a4aa-b33b4e726108.png exist.
 * Creating the temporary copy of this file in the /home/root/rm_calendar_memo/ location:
 cp /home/root/.local/share/remarkable/xochitl/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.thumbnails/e4013870-9f47-4dd8-a4aa-b33b4e726108.png /home/root/rm_calendar_memo/23.11.24.png
@@ -357,6 +369,7 @@ rm -f 23.11.24.png 23.11.24.new.composited.png 23.11.24.new.composited.png
 ========
 ```
 * <a name="optional2"></a> **[Optinal procedure 2 | Expand the PDF file:](#optional2)** <br>
+**NOTE**: This procedure was documented for the **Layout1**. But the same absolutely procedure is applicable to the **Layout2**.
 **First | Use this step only if you have updated your existing PDF file, on the Windows/Mac/Linux and would like to update it on your RMPP** <br>
 **Second | Also, make sure to only Extend the original PDF, and Not cut it, like do not remove existing pages, only add pages, if you need.** <br>
 Check the instructions from the **Use case 1 | Step D** , but in this case, only reupload the single file **430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.pdf** <br>
@@ -374,7 +387,7 @@ root@10.11.99.1's password:
 root@10.11.99.1's password:
 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.content                                                       100%   49KB  11.8MB/s   00:00
 [bash Downloads]$ ls -ltra |grep 430
--rw-r--r--   1 staff    49K Nov 23 17:44 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.content
+-rw-r--r--   1 staff    49K Jan  3 17:44 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.content
 ```
 **Fourth**: Open that file, and locate the line, which contains this `<HASH_ID>`: **9004cc86-a0d0-4da6-b663-04e8987423a5**, it would look like so:
 ```
