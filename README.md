@@ -305,6 +305,7 @@ systemctl enable rm_calendar_memo.service
 * The documentation is removed for this use case, for now. But it's possible. See earlier version 1.0.0, where it was present.
 
 ## ======== Optional, Debugging, Extras ====
+
 **(OPTIONAL/DEBUGGING)** The frequency of the dynamic changes of the file `suspended.png` is set to `0.5 seconds`, by default, but can be modified. <br>
 To modify it open the file `periodically_update_suspended_png.sh` and change the value of the `sleep 0.5` command to your value of choice. <br>
 * <a name="optional1"></a> **[Optinal procedure 1 | Enable the DEBUG logging:](#optional1)**
@@ -313,17 +314,22 @@ If set to the `true`, the `periodically_update_suspended_png.sh` would be writin
 Now, because the default frequency of the updates is `5 seconds`, you can imagine, if leaving the device for 1-3 days, the log file can raise in size. <br>
 After changing that environment variable value, it's needed to restart the SystemD service via this command `systemctl restart rm_calendar_memo`. <br>
 So, it's useful for debugging purposes. Here is the sample output of the `rm_calendar_memo.log` when debug is enabled:
+
 ```
 ========
-Right now is Sat Jan  3 16:28:54 UTC 2024. Searching for the /home/root/.local/share/remarkable/xochitl/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.thumbnails/e4013870-9f47-4dd8-a4aa-b33b4e726108.png file.
-* The file /home/root/.local/share/remarkable/xochitl/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.thumbnails/e4013870-9f47-4dd8-a4aa-b33b4e726108.png exist.
-* Creating the temporary copy of this file in the /home/root/rm_calendar_memo/ location:
-cp /home/root/.local/share/remarkable/xochitl/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.thumbnails/e4013870-9f47-4dd8-a4aa-b33b4e726108.png /home/root/rm_calendar_memo/23.11.24.png
-* Here is the metadata of that newly copied file:
+Right now is Thu Dec 26 14:18:23 CET 2024. Searching for the files.
+* The files exist. Creating the temporary copy of the following files in the /home/root/rm_calendar_memo/ location:
+** /home/root/.local/share/remarkable/xochitl/2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.thumbnails/489ef128-4ee8-44be-894f-0ae2403c3acc.png, /home/root/.local/share/remarkable/xochitl/2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.thumbnails/6cb9b296-0e5d-403d-88a2-a6c8294fec0d.png, /home/root/.local/share/remarkable/xochitl/2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.thumbnails/1bc284ff-4408-4121-80cf-6947d006c01e.png, /home/root/.local/share/remarkable/xochitl/2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.thumbnails/d429d858-1085-4463-b01d-93a974f44213.png
+cp /home/root/.local/share/remarkable/xochitl/2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.thumbnails/489ef128-4ee8-44be-894f-0ae2403c3acc.png /home/root/rm_calendar_memo/26.12.24.week.png
+cp /home/root/.local/share/remarkable/xochitl/2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.thumbnails/6cb9b296-0e5d-403d-88a2-a6c8294fec0d.png /home/root/rm_calendar_memo/26.12.24.morning.png
+cp /home/root/.local/share/remarkable/xochitl/2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.thumbnails/1bc284ff-4408-4121-80cf-6947d006c01e.png /home/root/rm_calendar_memo/26.12.24.afternoon.png
+cp /home/root/.local/share/remarkable/xochitl/2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.thumbnails/d429d858-1085-4463-b01d-93a974f44213.png /home/root/rm_calendar_memo/26.12.24.evening.png
+* Here is the metadata of that newly copied files:
+** 26.12.24.week.png, and it's metadata:
 {
   format: 'png',
-  width: 281,
-  height: 374,
+  width: 384,
+  height: 512,
   space: 'srgb',
   channels: 3,
   depth: 'uchar',
@@ -332,13 +338,11 @@ cp /home/root/.local/share/remarkable/xochitl/430f8cdf-e2e8-412c-b7e3-5ebf3b126b
   hasProfile: false,
   hasAlpha: false
 }
-* Resizing this temporary copy:
-node open_resize_png.js 23.11.24.png.png
-* As the result the new resized file created. The new resized absolute filename: 23.11.24.new.png, and it's metadata:
+** 26.12.24.morning.png, and it's metadata:
 {
   format: 'png',
-  width: 1620,
-  height: 2156,
+  width: 384,
+  height: 512,
   space: 'srgb',
   channels: 3,
   depth: 'uchar',
@@ -347,27 +351,106 @@ node open_resize_png.js 23.11.24.png.png
   hasProfile: false,
   hasAlpha: false
 }
-* Create the composited image by adding calendar image on top of the resized file of our TODO page:
-node open_composite_png.js 23.11.24.new 23.11.24_calendar.png
-* As the result the new composited file created with the filename: 23.11.24.new.composited.png, and it's metadata:
+** 26.12.24.afternoon.png, and it's metadata:
 {
   format: 'png',
-  width: 1620,
-  height: 2156,
+  width: 384,
+  height: 512,
   space: 'srgb',
-  channels: 4,
+  channels: 3,
   depth: 'uchar',
   density: 96,
   isProgressive: false,
   hasProfile: false,
-  hasAlpha: true
+  hasAlpha: false
 }
+** 26.12.24.evening.png, and it's metadata:
+{
+  format: 'png',
+  width: 384,
+  height: 512,
+  space: 'srgb',
+  channels: 3,
+  depth: 'uchar',
+  density: 96,
+  isProgressive: false,
+  hasProfile: false,
+  hasAlpha: false
+}
+* Preparing the PNGs. Removing top calendar from the page, to have only notes area:
+node open_prepare_png.js 26.12.24.week.png 1
+node open_prepare_png.js 26.12.24.morning.png 2
+node open_prepare_png.js 26.12.24.afternoon.png 3
+node open_prepare_png.js 26.12.24.evening.png 4
+* Resizing the newly modified PNGs:
+node open_resize_png.js 26.12.24.week.notes.png.png 1
+node open_resize_png.js 26.12.24.morning.notes.png.png 2
+node open_resize_png.js 26.12.24.afternoon.notes.png.png 3
+node open_resize_png.js 26.12.24.evening.notes.png.png 4
+* As the result the new resized files created. The new resized absolute filenames and metadatas:
+** 26.12.24.week.notes.new.png, and it's metadata:
+{
+  format: 'png',
+  width: 767,
+  height: 703,
+  space: 'srgb',
+  channels: 3,
+  depth: 'uchar',
+  density: 96,
+  isProgressive: false,
+  hasProfile: false,
+  hasAlpha: false
+}
+** 26.12.24.morning.notes.new.png, and it's metadata:
+{
+  format: 'png',
+  width: 767,
+  height: 703,
+  space: 'srgb',
+  channels: 3,
+  depth: 'uchar',
+  density: 96,
+  isProgressive: false,
+  hasProfile: false,
+  hasAlpha: false
+}
+** 26.12.24.afternoon.notes.new.png, and it's metadata:
+{
+  format: 'png',
+  width: 767,
+  height: 703,
+  space: 'srgb',
+  channels: 3,
+  depth: 'uchar',
+  density: 96,
+  isProgressive: false,
+  hasProfile: false,
+  hasAlpha: false
+}
+** 26.12.24.evening.notes.new.png, and it's metadata:
+{
+  format: 'png',
+  width: 767,
+  height: 703,
+  space: 'srgb',
+  channels: 3,
+  depth: 'uchar',
+  density: 96,
+  isProgressive: false,
+  hasProfile: false,
+  hasAlpha: false
+}
+* Creating the composited image by adding calendar image on top of the resized file of our TODO page:
+node open_composite_png.js 26.12.24_calendar.png 26.12.24.week.notes.new.png 26.12.24.morning.notes.new.png 26.12.24.afternoon.notes.new.png 26.12.24.evening.notes.new.png
 * Copying the new resized file into the target location, while replacing the current 'suspended.png' file:
-cp 23.11.24.new.composited.png /usr/share/remarkable/suspended.png
+cp 26.12.24.final.notes.new.composited.png /usr/share/remarkable/suspended.png
 * Deleting the temporary copy of the original file, resized file, and the composited file:
-rm -f 23.11.24.png 23.11.24.new.composited.png 23.11.24.new.composited.png
+rm -f 26.12.24.week.png 26.12.24.morning.png 26.12.24.afternoon.png 26.12.24.evening.png
+rm -f 26.12.24.week.notes.png 26.12.24.morning.notes.png 26.12.24.afternoon.notes.png 26.12.24.evening.notes.png
+rm -f 26.12.24.week.notes.new.png 26.12.24.morning.notes.new.png 26.12.24.afternoon.notes.new.png 26.12.24.evening.notes.new.png 26.12.24.final.notes.new.composited.png
 ========
 ```
+
 * <a name="optional2"></a> **[Optinal procedure 2 | Expand the PDF file:](#optional2)** <br>
 **NOTE**: This procedure was documented for the **Layout1**. But the same absolutely procedure is applicable to the **Layout2**.
 **First | Use this step only if you have updated your existing PDF file, on the Windows/Mac/Linux and would like to update it on your RMPP** <br>
