@@ -142,7 +142,7 @@ Also we need to give the executable bits to the `node` binary. Execute this comm
 ```
 root@<MY_RMPP_HOSTNAME>:~# chmod +x node-v22.11.0-linux-arm64/bin/*
 ```
-Let's also create the **"/home/root/rm_calendar_memo"** directory within the same **Terminal 1**:
+Let's also create the **`"/home/root/rm_calendar_memo"`** directory within the same **Terminal 1**:
 ```
 root@<MY_RMPP_HOSTNAME>:~# pwd
 /home/root
