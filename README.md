@@ -455,7 +455,7 @@ rm -f 26.12.24.week.notes.new.png 26.12.24.morning.notes.new.png 26.12.24.aftern
 **NOTE**: This procedure was documented for the **Layout1**. But the same absolutely procedure is applicable to the **Layout2**.
 **First | Use this step only if you have updated your existing PDF file, on the Windows/Mac/Linux and would like to update it on your RMPP** <br>
 **Second | Also, make sure to only Extend the original PDF, and Not cut it, like do not remove existing pages, only add pages, if you need.** <br>
-Check the instructions from the **Use case 1 | Step D** , but in this case, only reupload the single file **430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.pdf** <br>
+Check the instructions from the **Use case 1 | Step D** , but in this case, only reupload the single file **`430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.pdf`** <br>
 (do not re-upload the other files or folders)
 ```
 [bash Downloads]$ scp -r 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.pdf root@<RMPP_IP_ADDRESS>:/home/root/.local/share/remarkable/xochitl/
