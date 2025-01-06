@@ -17,7 +17,6 @@ which allows to write useful notes for the specific date within the app, and the
 * The current repo had been broked down into 2 parts/folders, depending on the final sleep screen layout: **`layout1_singlepage_sleepscreen`** and **`layout2_fourpages_sleepscreen`**. <br>
 * Those separate folders having the very similar files structure, but having some differences, some particular different scripts and implementations. <br>
 * **Layout 2 | Sleep screen example**: ![28 12 24 final notes new composited](https://github.com/user-attachments/assets/1e830106-6595-4adb-a0ce-6e5cafb861a5)
-* 
 # ======== Requirements, limitations, features ====
 **(LIMITATION)** The file `rm_calendar_memo/layout1_singlepage_sleepscreen/rm_calendar/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.pdf` contains the PDF calendar, currently, until 28 February 2025. <br>
 **(LIMITATION)** The file `rm_calendar_memo/layout2_fourpages_sleepscreen/rm_calendar/2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.pdf` contains the PDF calendar, currently, until 30 March 2025. <br>
