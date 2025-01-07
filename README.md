@@ -461,7 +461,7 @@ Check the instructions from the **Use case 1 | Step D** , but in this case, only
 ```
 **NOTE**: The point is that the RMPP would store all the `strokes/markings` within the `430f8cdf-e2e8-412c-b7e3-5ebf3b126bff/` **directory itself**, <br>
 and we are not touching that files, but only replacing the original PDF file. <br>
-**Third**: It's needed to also update the `.env` file with the new <HASH_ID>. For that, first, download the **.content** file from the RMPP: <br>
+**Third**: It's needed to also update the `.env` file with the new `<HASH_ID>`. For that, first, download the **.content** file from the RMPP: <br>
 ```
 [bash Downloads]$ scp -r root@10.11.99.1:/home/root/.local/share/remarkable/xochitl/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.content .
 root@10.11.99.1's password:
