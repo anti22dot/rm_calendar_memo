@@ -161,7 +161,7 @@ ORIGINAL_DOC_HASH_ID=2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d
 # Omitted further lines here.
 ...
 ```
-**NOTE**: Do not modify the other variables. You only need to modify one variable here, **NODE_ROOT=** which is path to `root` of the Node.js dir on RMPP. <br>
+**NOTE**: Do not modify the other variables. You only need to modify one variable here, **`NODE_ROOT=`** which is path to `root` of the Node.js dir on RMPP. <br>
 **NOTE**: For example, in my use case: **`NODE_ROOT=/home/root/node-v22.11.0-linux-arm64`**. <br>
 In this demonstration, I have chosen the **`layout2_fourpages_sleepscreen`**. Verify the project files, they should look similar to below:
 Change the directory to the chosen layout, in this case, **`layout2_fourpages_sleepscreen`**:
