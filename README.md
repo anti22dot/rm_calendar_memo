@@ -301,7 +301,7 @@ systemctl enable rm_calendar_memo.service
 ```
 
 # ======== Configuration, usage | Use case 2 | Use case 2 | Use any kind of document ====
-* The documentation is removed for this use case, for now. But it's possible. See earlier version 1.0.0, where it was present.
+* The documentation is removed for this use case, for now. But it's possible. See earlier version `1.0.0`, where it was present.
 
 ## ======== Optional, Debugging, Extras ====
 
