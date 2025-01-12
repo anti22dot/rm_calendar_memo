@@ -279,7 +279,7 @@ Then run this command to reload the SystemD daemon:
 ```
 systemctl daemon-reload
 ```
-Then start the service, and check the status of it:
+Then start the service, and check the status of it using the following commands:
 ```
 root@<MY_RMPP_HOSTNAME>:~# systemctl start rm_calendar_memo.service
 root@<MY_RMPP_HOSTNAME>:~# systemctl status -l rm_calendar_memo.service
