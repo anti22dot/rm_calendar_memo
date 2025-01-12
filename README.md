@@ -295,7 +295,7 @@ root@<MY_RMPP_HOSTNAME>:~# systemctl status -l rm_calendar_memo.service
 
 Jan  3 18:45:09 <MY_RMPP_HOSTNAME> systemd[1]: Started periodically update the remarkable paper pro suspended picture.
 ```
-To make sure the scripts would run after the reboot, execute this command:
+To make sure the scripts would run after the reboot, execute the following command:
 ```
 systemctl enable rm_calendar_memo.service
 ```
