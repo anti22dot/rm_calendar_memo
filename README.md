@@ -258,7 +258,7 @@ drwxr-xr-x    2 root     root          3520 Jan  3 22:08 2234ce4e-ec56-41c2-8d61
 -rw-r--r--    1 root     root         22562 Jan  3 22:08 2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.content
 drwxr-xr-x    4 root     root         20480 Jan  3 16:44 .
 ```
-It's needed to give the right permissions to the application files:
+It's needed to give the right permissions to the application files using the following commands:
 ```
 chmod 755 /home/root/rm_calendar_memo/*
 chmod 644 /home/root/rm_calendar_memo/rm_calendar_memo.service
