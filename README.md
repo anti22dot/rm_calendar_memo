@@ -267,7 +267,7 @@ Now, it's needed to copy the `rm_calendar_memo.service` into the SystemD directo
 ```
 cp /home/root/rm_calendar_memo/rm_calendar_memo.service /usr/lib/systemd/system/rm_calendar_memo.service
 ```
-Then, run these commands to check whether the service has been "`recognized`" by the SystemD, first:
+Then, run the following commands to check whether the service has been "`recognized`" by the SystemD, first:
 ```
 root@<MY_RMPP_HOSTNAME>:~# systemctl status rm_calendar_memo.service
 ○ rm_calendar_memo.service - periodically update the remarkable paper pro suspended picture
