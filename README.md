@@ -551,7 +551,7 @@ After that copy all the `<HASH_ID>`s, which are right after this above, but not 
 # After the "=" there should be valid rm page-specific HASH ID, see "README.md".
 # see "README.md". EXAMPLE: FILE_21_11_24=0537ae0b-1eb3-407e-b285-c02bdbee8af3
 ```
-So, because we have modified the original PDF file to add the new page, we have to label it as the respected month and date. In my case: <br>
+So, because we have modified the original PDF file to add the new page, we have to label it as the respected month and date. In my use case: <br>
 ```
 FILE_01_03_25=9343c2d0-893c-4263-aee9-61296b9b0715
 ```
