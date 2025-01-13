@@ -567,7 +567,7 @@ FILE_01_03_25=9343c2d0-893c-4263-aee9-61296b9b0715
 ```
 scp .env root@10.11.99.1:/home/root/rm_calendar_memo/
 ```
-**Ninth**: After that connect to the RMPP and execute this command to restart the `rm_calendar_memo` service:
+**Ninth**: After that connect to the RMPP and execute the following command to restart the `rm_calendar_memo` service:
 ```
 root@<MY_RMPP_HOSTNAME>:~# systemctl restart rm_calendar_memo.service
 ```
