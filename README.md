@@ -555,7 +555,7 @@ So, because we have modified the original PDF file to add the new page, we have 
 ```
 FILE_01_03_25=9343c2d0-893c-4263-aee9-61296b9b0715
 ```
-**Seventh**: After that, copy that above entire string(s) into the end of `.env` file:
+**Seventh**: After that, copy that above entire string(s) into the end of `.env` file, using the following command:
 ```
 FILE_27_02_25=54700140-af35-450a-8f6e-1291ade72e41
 FILE_28_02_25=9004cc86-a0d0-4da6-b663-04e8987423a5
