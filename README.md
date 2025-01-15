@@ -563,7 +563,7 @@ FILE_28_02_25=9004cc86-a0d0-4da6-b663-04e8987423a5
 # Here is modified new line:
 FILE_01_03_25=9343c2d0-893c-4263-aee9-61296b9b0715
 ```
-**Eighth**: Now, copy the file `.env` into the RMPP, using the following command:
+**Eighth**: Now copy the file `.env` into the RMPP, using the following command:
 ```
 scp .env root@10.11.99.1:/home/root/rm_calendar_memo/
 ```
