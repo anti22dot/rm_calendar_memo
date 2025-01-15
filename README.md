@@ -541,7 +541,7 @@ while working on that PDF document. So, do not pay attention to them:
                 }
             }
 ```
-**Fifth**: Once the previous step is done, you have determined, where exactly the `9004cc86-a0d0-4da6-b663-04e8987423a5` is and which are going after that. <br>
+**Fifth**: Once the previous step is done, you have determined, where exactly the `9004cc86-a0d0-4da6-b663-04e8987423a5` is, and which are going after that. <br>
 After that copy all the `<HASH_ID>`s, which are right after this above, but not deleted, into the notepad, like so (in my case only one page):
 ```
 9343c2d0-893c-4263-aee9-61296b9b0715
