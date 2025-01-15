@@ -546,7 +546,7 @@ After that copy all the `<HASH_ID>`s, which are right after this above, but not 
 ```
 9343c2d0-893c-4263-aee9-61296b9b0715
 ```
-**Six**: Then, it's needed to prepend those values with the particular syntax, visible in the `.env` file:
+**Six**: Then, it's needed to prepend the following values with the particular syntax, visible in the `.env` file:
 ```
 # After the "=" there should be valid rm page-specific HASH ID, see "README.md".
 # see "README.md". EXAMPLE: FILE_21_11_24=0537ae0b-1eb3-407e-b285-c02bdbee8af3
