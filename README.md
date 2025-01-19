@@ -471,7 +471,7 @@ root@10.11.99.1's password:
 [bash Downloads]$ ls -ltra |grep 430
 -rw-r--r--   1 staff    49K Jan  3 17:44 430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.content
 ```
-**Fourth**: Open that file, and locate the line, which contains this `<HASH_ID>`: **`9004cc86-a0d0-4da6-b663-04e8987423a5`**, it would look like so:
+**Fourth**: Open that file and locate the line, which contains this `<HASH_ID>`: **`9004cc86-a0d0-4da6-b663-04e8987423a5`**, it would look like so:
 ```
             },
             {
