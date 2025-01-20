@@ -12,7 +12,7 @@ References <br>
 
 * See this video demonstration: https://www.youtube.com/watch?v=YAz8Y30VeO0
 * The "Calendar Memo" term has been borrowed from the Onyx Boox eink devices, since they have the similar kind of separate Android application, <br>
-which allows to write useful notes for the specific date within the app, and then display the notes relevant to the current date of looking.
+which allows to write useful notes for the specific date within the app, and then display the notes relevant to the current date of looking. <br>
 * The similar concept has been taken when designing the functionality of this implementation on the RMPP. <br>
 * The current repo had been broked down into 2 parts/folders, depending on the final sleep screen layout: **`layout1_singlepage_sleepscreen`** and **`layout2_fourpages_sleepscreen`**. <br>
 * Those separate folders having the very similar files structure, but having some differences, some particular different scripts and implementations. <br>
