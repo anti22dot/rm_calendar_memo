@@ -195,7 +195,7 @@ drwxr-xr-x   8 staff   256B Jan  3 22:08 rm_calendar
 drwxr-xr-x  16 staff   512B Jan  3 22:08 .
 -rw-r--r--   1 staff   472B Jan  3 22:08 rm_calendar_memo.service
 ```
-From MAC/WIN | It's now needed to transfer the entire content of the chosen layout, **`layout2_fourpages_sleepscreen`**, into the RMPP, under the **`/home/root/rm_calendar_memo/`**. In my use case I used "scp":
+From MAC/WIN | It's now needed to transfer the entire content of the chosen layout, **`layout2_fourpages_sleepscreen`**, into the RMPP under the **`/home/root/rm_calendar_memo/`**. In my use case I used "scp":
 ```
 [bash layout2_fourpages_sleepscreen]$ pwd
 /Users/<MY_USER_ID>/Downloads/layout2_fourpages_sleepscreen
