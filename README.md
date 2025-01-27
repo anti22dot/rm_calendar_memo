@@ -20,8 +20,9 @@ which allows to write useful notes for the specific date within the app and then
 # ======== Requirements, limitations, features ====
 **(LIMITATION)** The file `rm_calendar_memo/layout1_singlepage_sleepscreen/rm_calendar/430f8cdf-e2e8-412c-b7e3-5ebf3b126bff.pdf` contains the PDF calendar, at this moment, until `28 February 2025`. <br>
 **(LIMITATION)** The file `rm_calendar_memo/layout2_fourpages_sleepscreen/rm_calendar/2234ce4e-ec56-41c2-8d61-cbfd97d3ae3d.pdf` contains the PDF calendar, currently, until `30 March 2025`. <br>
-**(LIMITATION)** If you decide to and update only the PDF files itself (like if you would like to change something in the PDF), it's needed to reupload only that file to RMPP, but make sure to not change the order of the existing pages or remove the pages, and it's important for the existing scripts to work. <br>
-**(FEATURE/LIMITATION)** The current implementation scripts are modifying the `suspended.png` and dynamically replacing original file. <br>
+**(LIMITATION)** If you decide to and update only the PDF files itself (if you would like to change something in the PDF), it's needed to reupload only <br> 
+that file to RMPP, but make sure to not change the order of the existing pages or remove the pages, and it's important for the existing scripts to work. <br>
+**(FEATURE/LIMITATION)** The current implementation scripts are modifying the `suspended.png` file and dynamically replacing the original file. <br>
 In the script `periodically_update_suspended_png.sh` there is a line `sleep 5`. It means that the frequency of those changes is 0.5 seconds. <br>
 What's most important that there is a loop, that runs indefinitely. This is overall `good` and `bad`. `Good`, because it updates the document fast. <br>
 `Bad` because it is not very efficient to keep on replacing the file all the time, even when we don't actually adding notes to respected document. <br>
