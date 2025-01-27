@@ -23,7 +23,7 @@ which allows to write useful notes for the specific date within the app and then
 **(LIMITATION)** If you decide to and update only the PDF files itself (like if you would like to change something in the PDF), it's needed to reupload only that file to RMPP, but make sure to not change the order of the existing pages or remove the pages, and it's important for the existing scripts to work. <br>
 **(FEATURE/LIMITATION)** The current implementation scripts are modifying the `suspended.png`, by dynamically replacing it. <br>
 In the script `periodically_update_suspended_png.sh` there is a line `sleep 5`. It means that the frequency of those changes is 0.5 seconds. <br>
-What's most important that there is a loop, that runs indefinitely. This is overall `good` and `bad`. `Good`, because it's performant, fast updates. <br>
+What's most important that there is a loop, that runs indefinitely. This is overall `good` and `bad`. `Good`, because it updates the document fast. <br>
 `Bad` because it is not very efficient to keep on replacing the file all the time, even when we don't actually adding notes to respected document. <br>
 **(FEATURE/LIMITATIONS)** I have been reviewing the CPU and RAM consumption of the implementation-specific files, during the execution, using `top` tool, on RMPP. <br>
 The CPU and RAM (%VSZ) consumptions were showing `0%`/`0%` almost all the time, for the respected scripts used:
